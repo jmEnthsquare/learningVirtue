@@ -1,0 +1,96 @@
+<main class="tophat">
+
+
+        <section class="well2">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <br>
+
+                <!-- <div class="map">
+                    <div ng-map id="google-map" class="map_model" data-zoom="6"></div>
+                    <ul class="map_locations">
+                        <li data-x="-73.9874068" data-y="40.643180">
+                            <p> 9870 St Vincent Place, Glasgow, DC 45 Fr 45. <span>800 2345-6789</span></p>
+                        </li>
+                    </ul>
+                </div> -->
+                <ng-map center="17.435391, 78.368566"
+      zoom="18"
+            tilt="45"
+      heading="90">
+    </ng-map>
+
+
+                <div class="row offs">
+                    <div class="col-md-4 col-sm-12 col-xs-12 center991 wow fadeInLeft" data-wow-duration="2s"
+                         data-wow-delay="0.2s">
+                        <h2>Contact Info</h2>
+
+                        <div class="contact-info center991">
+                        <dl>
+                                <dt>Phone:</dt>
+                                <dd>
+                                    <a href="callto:+91-40-23119926"> +91-40-23119926 </a>
+                                </dd>
+                                <dt>E-mail:</dt>
+                                <dd>
+                                    <a href="mailto:#">contact@learningvirtue.com</a>
+                                </dd>
+                            </dl><br>
+                            <address class="text-primary">Jyothi Imperial, 4th Floor,  <br>SY.No.50. Plots 189 to 198 <br>Gachibowli, Hyderabad -  500032 
+                            </address>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <h2>Contact Form</h2>
+
+                        <div class="cform row offs">
+                            <form class='rd-mailform ' method="post" action="/contact-action">
+                                <!-- RD Mailform Type -->
+                                <input type="hidden" name="form-type" value="contact"/>
+                                <!-- END RD Mailform Type -->
+
+                                    <div class="form-group col-md-6 col-sm-12 col-xs-12 col_mod" >
+                                        <label class="form-label" data-add-placeholder for="mailform-input-name">Name</label>
+                                        <input id="mailform-input-name"
+                                               type="text"
+                                               name="name"
+                                               data-constraints="@NotEmpty @LettersOnly"/>
+
+                                    </div>
+
+                                    <div class="form-group col-md-6 col-sm-12 col-xs-12 col_mod">
+                                        <label class="form-label" data-add-placeholder for="mailform-input-email">Email</label>
+                                        <input id="mailform-input-email"
+                                               type="text"
+                                               name="email"
+                                               data-constraints="@NotEmpty @Email"/>
+
+                                    </div>
+
+                                    <div class="form-group textarea col-md-12 col-sm-12 col-xs-12 col_mod">
+                                        <label  class="form-label" data-add-placeholder for="mailform-input-textarea">Message</label>
+                                        <textarea id="mailform-input-textarea"
+                                                name="message"
+                                                data-constraints="@NotEmpty"></textarea>
+
+                                    </div>
+
+                                    <div class="form-group btn-wr col-md-12 col-sm-12 col-xs-12 col_mod">
+                                        <div class="mfControls">
+                                            <button class="btn btn-primary btn-primary__mod" type="submit">Submit</button>
+                                            <div class="mfInfo"></div>
+                                        </div>
+                                    </div>
+
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>

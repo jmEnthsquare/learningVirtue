@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="virtue">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="icon" href="images/lvfavicon.ico" type="image/x-icon">
+    <title>Home</title>
+
+    <!-- Bootstrap -->
+ <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous"> -->
+<!-- Bootstrap w/updates -->
+ <link href="css/bootstrap.css" rel="stylesheet">
+ <link href="css/google-map.css" rel="stylesheet">
+    <!-- Links -->
+    
+    <link href="css/camera.css" rel="stylesheet">
+    <link href="css/jquery.fancybox.css" rel="stylesheet">
+    <link href="css/subscribe.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl-carousel.css">
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <!--JS-->
+<!--     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.0.0.js" ></script>
+ -->    
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <!--[if lt IE 9]>
+    <div style=' clear: both; text-align:center; position: relative;'>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
+            <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
+                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+        </a>
+    </div>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+    <script src='js/device.min.js'></script>
+</head>
+<body ng-app="virtue">
+<div class="page">
+    <!--========================================================
+                              HEADER
+    =========================================================-->
+    <header class="clearfix">
+
+        <div class="navbar-fixed-top">
+            <nav class="navbar navbar-default navbar-static-top clearfix stuck_container">
+                <div class="container">
+                    <div class="navbar-header">
+                        <h1 class="navbar-brand">
+                            <a data-type='rd-navbar-brand' href="./">
+                            </a>
+                        </h1>
+                    </div>
+
+                    <ul class="inline-list">
+                        <li><a class="fa fa-facebook" href="#"></a></li>
+                        <li><a class="fa fa-twitter" href="#"></a></li>
+                        <li><a class="fa fa-google-plus" href="#"></a></li>
+                    </ul>
+
+                    <ul class="navbar-nav sf-menu" data-type="navbar">
+                        <li>
+                            <a ui-sref="home" ui-sref-active="active">Home</a>
+                        </li>
+                        <li><a href="">Careers</a></li>
+                        <li class="dropdown">
+                            <a href="index-2.html">Training</a>
+                            <ul class="dropdown-menu">
+                            <li>
+                            <a href="">Find a Training</a></li>
+                            <li><a href="">
+                            Find a Trainer</a></li>
+                            <li><a href="">Workshops</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="index-3.html">News</a>
+                        </li>
+
+                        <li>
+                            <a ui-sref="contact">Contact Us</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="second-nav clearfix">
+                <div class="container">
+                <ul class="navbar-nav second-content nav-weight" >
+                <li class="dropdown">
+                                    <a ui-sref="about" ui-sref-active="active">About Us</a>
+                                    <!-- <ul class="dropdown-menu">
+                                        <li><a href="">Mission</a></li>
+                                        <li><a href="">Vision</a></li>
+                                    </ul> -->
+                                </li>
+                                <li>
+                                    <a href="#">Calendar</a>
+                                </li>
+                                <li>
+                                    <a href="#">Career Goals</a>
+                                </li>
+                            
+                        </li>
+                        <li>
+                            <a href="index-2.html">Hall of Fame</a>
+                        </li>
+                        <li>
+                            <a href="index-3.html">Chat/Online</a>
+                        </li>
+
+                        <li>
+                            <a ui-sref="login">Login/Register</a>
+                        </li>
+</ul></div></div>
+
+
+            </nav>
+             
+        </div>
+
+
+    </header>
+    <!--========================================================
+                              CONTENT
+    =========================================================-->
+
+    <ui-view></ui-view>
+
+
+    <!--========================================================
+                            FOOTER
+    =========================================================-->
+    <footer>
+
+        <section class="clearfix well4">
+            <div class="container">
+                <div class="contact pull-left">
+                    <span class="material-icons-location_on"></span>
+                    <address class="h4 text-primary">Jyothi Imperial, 4th Floor,  <br>SY.No.50. Plots 189 to 198  <br>Near Gachibowli Flyover on Gachibowli Main Road, <br>Above South India Shopping Mall <br>Gachibowli, Hyderabad -  500032 
+                    </address>
+                </div>
+
+
+                <div class="contact pull-right">
+                    <span class="material-icons-local_phone"></span>
+                    <a href="callto:#">+91-40-23119926 </a>
+                    <!-- <a href="callto:#"> 800-2345-6790</a> -->
+
+                    <p class="offs">7 days a week from 8:00 am to 7:00 pm</p>
+                </div>
+            </div>
+        </section>
+        <hr/>
+        <div class="container">
+            <p class="copyright">
+                <a href="#">Learning Virtue </a> &#169; <span id="copyright-year"></span>.
+                <a class="text-primary" href="index-5.html">Privacy Policy</a>
+                <!-- {%FOOTER_LINK} -->
+            </p>
+        </div>
+    </footer>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/tm-scripts.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-animate.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+<script src="http://maps.google.com/maps/api/js"></script>
+<script src="js/angular/ng-map.js"></script>
+<script src="js/angular/angular-parallax.js"></script>
+<script src="js/angular/app.js"></script>
+<script src="js/angular/controller.js" ></script>
+<script src="js/angular/routes.js"></script>
+<script src="js/angular/directives.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/wow.js"></script> 
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.ui.accordion.min.js"></script>
+<script src="js/camera.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/jquery.fancybox-media.js"></script>
+<script src="js/jquery.fancybox-buttons.js"></script>
+<script src="js/jquery.rd-parallax.js"></script>
+
+
+
+<!-- </script> -->
+
+</body>
+</html>
