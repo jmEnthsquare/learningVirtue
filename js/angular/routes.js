@@ -83,6 +83,12 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 		templateUrl: './views/courses/ui-ux.html'
 	}
 
+	var ciscoCourseState = {
+		name: 'cisco',
+		url: '/courses/cisco',
+		templateUrl: './views/courses/cisco.html'
+	}
+
 	$stateProvider.state(homeState);
 	$stateProvider.state(page404State);
 	$stateProvider.state(staffState);
@@ -96,6 +102,7 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 	$stateProvider.state(trainingState);
 	$stateProvider.state(linuxCourseState);
 	$stateProvider.state(uiuxCourseState);
+	$stateProvider.state(ciscoCourseState);
 
 
 

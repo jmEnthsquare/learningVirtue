@@ -125,10 +125,11 @@ hr {
 .marked-list-skin > li > ul > ul> li {
   color: #55dc69;
   font-style: oblique;
-  left: 2%;
-  }
-.marked-list-skin > li > ul > ul> li{
-
+  left: 3%;
+  /*display: none;
+*/  }
+.marked-list-skin > li > ul > li{
+/*display: none;*/
 }
 .marked-list-skin li:before {
   content: '\e315';
