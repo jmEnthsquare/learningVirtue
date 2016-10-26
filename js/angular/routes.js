@@ -1,12 +1,14 @@
 angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpProvider','$locationProvider', function($urlRouterProvider, $stateProvider, $httpProvider, $locationProvider) {
 	
-	$urlRouterProvider.otherwise("/");
+	$urlRouterProvider.otherwise("/notfound");
+	$locationProvider.html5Mode(true);
+
 
 	var homeState = {
 		name: 'home',
 		url: '/',
 		//template: '<h1>How Bout it?</h1>'
-		templateUrl: './views/home.html'
+		templateUrl: '/views/home.html'
 	}
 
 	var page404State = {
@@ -31,7 +33,7 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 	var aboutState = {
 		name: 'about',
 		url: '/about',
-		templateUrl: './views/about.html'
+		templateUrl: '/views/about.html'
 	}
 
 	var careerState = {

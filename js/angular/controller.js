@@ -19,3 +19,8 @@ virtue.controller('formCtrl', ['$scope', function($scope){
 	console.log('check it out');
 	//$scope.selection = $scope.items[0];
 }]);
+
+virtue.controller('tabCtrl', ['$scope', function($scope){
+	$scope.tab = 'html5';
+	
+}]);

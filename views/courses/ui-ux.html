@@ -1,4 +1,4 @@
-    <main class="tophat">
+    <main class="tophat" ng-controller="tabCtrl">
 		
         <section class="well2">
             <div class="container">
@@ -69,10 +69,21 @@
 <br>
 </div>
     </div>  </div>
+
+<ul class="nav nav-tabs">
+  <li role="presentation" ng-class='{"active": tab == "html5"}'><a ng-click="tab='html5'">HTML5</a></li>
+  <li role="presentation" ng-class='{"active": tab == "css"}'><a ng-click="tab='css'">CSS</a></li>
+  <li role="presentation" ng-class='{"active": tab == "js"}'><a ng-click="tab='js'">Javascript</a></li>
+  <li role="presentation" ng-class='{"active": tab == "bejs"}'><a ng-click="tab='bejs'">Back-end Javascript</a></li>
+  <li role="presentation" ng-class='{"active": tab == "jslib"}'><a ng-click="tab='jslib'">Javascript Libraries/Plugins</a></li>
+
+</ul>
+
+
 <!-- <h3><strong>Content:</strong></h3> -->
-<div class="container">
+<div class="container" ng-switch="tab">
 <div class="row">
-<div class="col-md-4">
+<div class="col-md-6" ng-switch-default>
 <br>
 <h2>HTML 5</h2>
 <ul class="marked-list-skin">
@@ -134,7 +145,7 @@
 </div>
 
 
-<div class="col-md-4">
+<div class="col-md-6" ng-switch-when="css">
 <br>
 <h2>CSS3</h2>
 <ul class="marked-list-skin">
@@ -206,7 +217,7 @@
 </div>
 
 
-<div class="col-md-4">
+<div class="col-md-6" ng-switch-when="js">
 <br>
 <h2>Javascript</h2>
 <ul class="marked-list-skin">
@@ -276,8 +287,8 @@
 
 </div>
 
-<div class="row">
-    <div class="col-md-4">
+<!-- <div class="row"> -->
+<!--     <div class="col-md-4" ng-switch-when="js">
 <br>
 <h2>Javascript</h2>
 <ul class="marked-list-skin">
@@ -345,8 +356,8 @@
 <br>
 
 
-</div>
-<div class="col-md-4">
+</div> -->
+<div class="col-md-6" ng-switch-when="js">
     <br>
     <h2>Advanced Javascript</h2>
     <ul class="marked-list-skin">
@@ -378,7 +389,7 @@
 
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="col-md-4" ng-switch-when="jslib">
                         <br>
                         <h2>JQuery</h2>
                         <ul class="marked-list-skin">
@@ -440,7 +451,7 @@
                     
 </div>
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6" ng-switch-when="jslib">
         <h2>Angular JS</h2>
 
         <ul class="marked-list-skin">
@@ -491,7 +502,7 @@
         </ul>
     </div>
 
-<div class="col-md-4">
+<div class="col-md-6" ng-switch-when="bejs">
     <h2>NodeJS</h2>
     <ul class="marked-list-skin">
         <li><strong>Adv. Javascript Overview</strong>
@@ -555,10 +566,10 @@
     </ul>
 </div>
 
-<div class="col-md-4">
+<div class="col-md-6" ng-switch-when="bejs">
     <h2>MongoDB</h2>
     <ul class="marked-list-skin">
-        <li><strong>Introduction & Overview - Overview</strong> <ul>
+        <li><strong>Introduction & Overview</strong> <ul>
 <li>Design Goals</li>
 <li>the Mongo Shell</li>
 <li>JSON Intro</li>
