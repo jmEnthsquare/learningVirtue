@@ -22,5 +22,20 @@ virtue.controller('formCtrl', ['$scope', function($scope){
 
 virtue.controller('tabCtrl', ['$scope', function($scope){
 	$scope.tab = 'html5';
+	$scope.slab = 'ccna';
 	
 }]);
+
+virtue.controller('contactCtrl', function($scope, $interval, NgMap){
+	
+	NgMap.getMap().then(function(map){
+		$scope.showCustomMarker = function(evt){
+			map.customMarkers.lv.setVisible(true);
+			map.customMarkers.lv.setPosition(this.getPosition());
+		};
+		$scope.closeCustomMarker = function(evt){
+			//this.style.display = 'none';
+		}
+
+	})
+});

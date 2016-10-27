@@ -114,9 +114,37 @@ hr {
 .marked-list li + li {
   margin-top: 44px;
 }
+/* ================= Latest News & Latest Courses ============== */
+.horizon{
+  background-color: black;
+  width: 90%;
+  height: 0px;
+  border: 5px solid grey;
+  margin-top: 10px;
+  float: left;
+}
+.hblock {
+  background-color: #55dc69;
+    color: white;
+  float: left;
+}
+.clearleft{
+  clear: left;
+}
+.hblock p {
+  padding: 0px 5px;
+
+  font-weight: bold;
+}
+div.media-body p{
+  padding: 0;
+}
 /*==================  Marked List2  ======================*/
 * + .marked-list-skin {
   margin-top: 34px;
+}
+.tabz{
+  margin: 30px 10px 0px 40px;
 }
 .marked-list-skin li {
   position: relative;
