@@ -91,6 +91,13 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 		templateUrl: './views/courses/cisco.html'
 	}
 
+	var webDeveloperState = {
+		name: 'web-developer',
+		url: '/web-developer',
+		templateUrl: './views/courses/webdeveloper.html'
+
+	}
+
 	$stateProvider.state(homeState);
 	$stateProvider.state(page404State);
 	$stateProvider.state(staffState);
@@ -105,6 +112,7 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 	$stateProvider.state(linuxCourseState);
 	$stateProvider.state(uiuxCourseState);
 	$stateProvider.state(ciscoCourseState);
+	$stateProvider.state(webDeveloperState);
 
 
 
