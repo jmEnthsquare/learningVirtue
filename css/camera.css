@@ -8,6 +8,7 @@
 .camera_container {
   position: relative;
   padding-bottom: 42.43164063%;
+  min-height: 400px;
 }
 @media (max-width: 707.01956272px) {
   .camera_container {

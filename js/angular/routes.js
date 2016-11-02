@@ -98,6 +98,12 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 
 	}
 
+	var calendarState = {
+		name: 'calendar',
+		url: '/calendar',
+		templateUrl: './views/calendar.html'
+	}
+
 	$stateProvider.state(homeState);
 	$stateProvider.state(page404State);
 	$stateProvider.state(staffState);
@@ -113,6 +119,7 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 	$stateProvider.state(uiuxCourseState);
 	$stateProvider.state(ciscoCourseState);
 	$stateProvider.state(webDeveloperState);
+	$stateProvider.state(calendarState);
 
 
 
