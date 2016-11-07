@@ -93,7 +93,7 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 
 	var webDeveloperState = {
 		name: 'web-developer',
-		url: '/web-developer',
+		url: '/courses/web-developer',
 		templateUrl: './views/courses/webdeveloper.html'
 
 	}
@@ -101,7 +101,15 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 	var calendarState = {
 		name: 'calendar',
 		url: '/calendar',
+		controller: 'calendarCtrl',
 		templateUrl: './views/calendar.html'
+	}
+
+	var c2cState = {
+		name: 'college-corperate',
+		url:'/courses/college-corperate',
+		controller: 'tabCtrl',
+		templateUrl: './views/courses/c2c.html'
 	}
 
 	$stateProvider.state(homeState);
@@ -120,6 +128,7 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 	$stateProvider.state(ciscoCourseState);
 	$stateProvider.state(webDeveloperState);
 	$stateProvider.state(calendarState);
+	$stateProvider.state(c2cState);
 
 
 
