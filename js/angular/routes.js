@@ -23,7 +23,6 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 		templateUrl: './views/staff.html'
 	}
 
-
 	var hofState = {
 		name: 'hof',
 		url: '/hof',
@@ -112,6 +111,12 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 		templateUrl: './views/courses/c2c.html'
 	}
 
+	var workshopState = {
+		name: 'workshops',
+		url: '/workshops',
+		templateUrl: './views/workshops.html'
+	}
+
 	$stateProvider.state(homeState);
 	$stateProvider.state(page404State);
 	$stateProvider.state(staffState);
@@ -129,8 +134,20 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 	$stateProvider.state(webDeveloperState);
 	$stateProvider.state(calendarState);
 	$stateProvider.state(c2cState);
+	$stateProvider.state(workshopState);
 
+	$stateProvider.state('train',{
+		abstract: true,
+		url: '/dog',
+		templateUrl: './views/train.html'
 
+	})
+
+	$stateProvider.state('train.training', {
+		url: '/dogging',
+		templateUrl: './views/calendar.html',
+		controller: 'calendarCtrl'
+	})
 
 }]);
 

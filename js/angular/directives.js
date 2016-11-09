@@ -57,7 +57,7 @@ virtue.directive('fancybox', function(){
 virtue.directive('ngBubbleSlider', function() {
   return {
     scope: true,
-    template: "<div class='ng-slider ball bubble' ng-style='pos'><h4 class='bu-bble'>Myth vs. Fact</h4></div>",
+    template: "<a ui-sref='mythfact'><div class='ng-slider ball bubble' ng-style='pos'><h4 class='bu-bble'>Myth vs. Fact</h4></div></a>",
     replace: true,
     controller: function($scope, $interval) {
 

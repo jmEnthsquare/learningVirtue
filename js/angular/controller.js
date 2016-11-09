@@ -43,6 +43,80 @@ virtue.controller('contactCtrl', function($scope, $interval, NgMap){
 
 
 virtue.controller('calendarCtrl', function($scope) {
+
+		    var date = new Date();
+    		var d = date.getDate();
+    		var m = date.getMonth();
+    		var y = date.getFullYear();
+
+	    $scope.events = [
+      // {title: 'All Day - Every Day',
+      // start: new Date(y, 10, 14)},
+      //{title: 'Long Event',start: new Date(y, m, d - 5),end: new Date(y, m, d - 2)},
+      // {title: 'Linux Admin Course',
+      // start: new Date(y, m, d - 5),
+      // end: new Date(y, m, d - 0)},
+      {title: 'Linux Admin Course',
+      start: new Date(y, 10, 14),
+      end: new Date(y, 11, 14),
+      url: '/courses/linux'},
+
+      {title: 'CCIE Boot Camp',
+      start: new Date(y, 10, 14),
+      end: new Date(y, 11, 14),
+      url: '/courses/cisco'},
+
+      {title: 'Web Development',
+      start: new Date(y, 10, 1),
+      end: new Date(y, 11, 26),
+      url: '/courses/web-developer'},
+
+      {title: 'Dev Ops',
+      start: new Date(y, 10, 15),
+      end: new Date(y, 10, 26)},
+
+      {title: 'Corporate Ethics',
+      start: new Date(y, 10, 15),
+      end: new Date(y, 10, 26),
+      url: '/workshops'},
+
+      {title: 'Communication Skills',
+      start: new Date(y, 10, 18),
+      end: new Date(y, 11, 2),
+      url: 'http://google.com/'},
+
+      {title: 'Cloud Computing',
+      start: new Date(y, 10, 20),
+      end: new Date(y, 11, 2),
+      url: 'http://google.com/'},
+
+
+      {title: 'Android',
+      start: new Date(y, 11, 1),
+      end: new Date(y, 11, 24),
+      url: 'http://google.com/'},
+
+      {title: 'iOS & iOT',
+      start: new Date(y, 11, 5),
+      end: new Date(y, 11, 28),
+      url: 'http://google.com/'},
+
+
+
+
+
+      // {id: 999,title: 'Repeating Events',start: new Date(y, m, d - 3, 16, 0),allDay: true},
+      // {id: 999,title: 'Repeat Event',start: new Date(y, m, d + 4, 16, 0),allDay: false},
+      // {title: 'Birthday Party',start: new Date(y, m, d + 1, 19, 0),end: new Date(y, m, d + 1, 22, 30),allDay: false},
+      // {title: 'Click for Google',start: new Date(y, m, 28),end: new Date(y, m, 29),url: 'http://google.com/'}
+    ];
+
+    $scope.eventSource = {
+            url: "http://www.google.com/calendar/feeds/usa__en%40holiday.calendar.google.com/public/basic",
+            className: 'gcal-event',           // an option!
+            currentTimezone: 'America/Chicago' // an option!
+    };
+    /* eve
     /* config object */
     $scope.uiConfig = {
       calendar:{
@@ -59,6 +133,9 @@ virtue.controller('calendarCtrl', function($scope) {
         eventRender: $scope.eventRender
       }
     };
+        $scope.eventSources = [$scope.events, $scope.eventSource, $scope.eventsF];
+    	//$scope.eventSources2 = [$scope.calEventsExt, $scope.eventsF, $scope.events];
+
 });
 
 
