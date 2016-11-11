@@ -20,7 +20,8 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 	var staffState = {
 		name: 'staff',
 		url: '/staff',
-		templateUrl: './views/staff.html'
+		templateUrl: './views/staff.html',
+		controller: 'trainerCtrl'
 	}
 
 	var hofState = {
@@ -86,7 +87,8 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 
 	var ciscoCourseState = {
 		name: 'cisco',
-		url: '/courses/cisco',
+		url: '/courses/cisco/:mod',
+		controller: 'tabCtrl',
 		templateUrl: './views/courses/cisco.html'
 	}
 
@@ -138,13 +140,12 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 
 	$stateProvider.state('train',{
 		abstract: true,
-		url: '/dog',
+		url: '/train',
 		templateUrl: './views/train.html'
-
 	})
 
 	$stateProvider.state('train.training', {
-		url: '/dogging',
+		url: '/trainup',
 		templateUrl: './views/calendar.html',
 		controller: 'calendarCtrl'
 	})

@@ -1,80 +1,53 @@
-[{
-	"name": "Hari G. Sharma",
-	"image": "",
-	"specialty": "Networking",
-	"position": "Professor",
-	"description": "A CCIE collaboration certified professional, 
-	Hari is specialised in Cisco Network Technology. With overall 
-	25+ years of experience in the IT sector and 14 + years of total 
-	domain experience, his specialisation includes handling and 
-	managing large scale network infrastructure with Data, Voice and Video 
-	technology along with capabilities of knowledge transfer and managing 
-	team of engineers. His international certification includes CCIE 
-	Collaboration #45874, CCNP, CCNP SECURITY, CCSP, CCNA SECURITY, 
-	and CCNA. Hari is highly experienced, motivated, dedicated and 
-	multi skilled IT professional.",
-	"coursesTaught": ""
+[{"name":"Hari G. Sharma",
+"image":"",
+"specialty":"Networking",
+"position":"Professor",
+"description":"A CCIE collaboration certified professional, Hari is specialised in Cisco Network Technology. With overall 25+ years of experience in the IT sector and 14 + years of total domain experience, his specialisation includes handling and managing large scale network infrastructure with Data, Voice and Video technology along with capabilities of knowledge transfer and managing team of engineers. His international certification includes CCIE Collaboration #45874, CCNP, CCNP SECURITY, CCSP, CCNA SECURITY, and CCNA. Hari is highly experienced, motivated, dedicated and multi skilled IT professional.",
+"coursesTaught":""
 },
 {
-	"name": "Ravinder Singh",
-	"image": "",
-	"specialty": "Linux & Networking",
-	"position": "Professor",
-	"description": "Ravi is an RHCSA & RHCE Redhat certified professional. 
-	With 10 + years of industry experience, he has trained a whooping 
-	400+ batches on RHCSA and RHCE. Adopting a strict fun-with-learning 
-	attitude brings up Ravi as a top of the line IT facilitator. As another 
-	feather in his ‘red hat’, he is also a certified Solaris & Jboss Administrator.",
-	"coursesTaught": ""
+"name":"Ravinder Singh",
+"image":"",
+"specialty":"Linux & Networking",
+"position":"Professor",
+"description":"Ravi is an RHCSA & RHCE Redhat certified professional. With 10 + years of industry experience, he has trained a whooping 400+ batches on RHCSA and RHCE. Adopting a strict fun-with-learning attitude brings up Ravi as a top of the line IT facilitator. As another feather in his ‘red hat’, he is also a certified Solaris & Jboss Administrator.",
+"coursesTaught":""
 },
 {
-	"name": "Shymoe Daniel",
-	"image": "",
-	"specialty": "Professional Training",
-	"position": "Professor",
-	"description": "Shymoe has 10+ years of experience as a Corporate Trainer 
-	and holds the below certifications:
-TTT Certified in Anne Cook modules of Voice and Accent
-TTT in Certified Learning Professional
-Certified Master trainer in Learning Professional for Facilitation skills
-Certified Master trainer in Scenario Based Learning
-Certified in Lean Six sigma",
-	"coursesTaught": ""
+"name":"Shymoe Daniel",
+"image":"",
+"specialty":"Professional Training",
+"position":"Professor",
+"description":"Shymoe has 10+ years of experience as a Corporate Trainer and holds the below certifications:TTT Certified in Anne Cook modules of Voice and AccentTTT in Certified Learning ProfessionalCertified Master trainer in Learning Professional for Facilitation skillsCertified Master trainer in Scenario Based LearningCertified in Lean Six sigma",
+"coursesTaught":""
 },
 {
-	"name": "Lingraj Nandi",
-	"image": "",
-	"specialty": "Java/J2EE",
-	"position": "Professor",
-	"description": "Lingraj has 10+ years of experience in corporate 
-	trainings and has handled 100+ corporate assignments, namely at NIIT, 
-	Tech Mahindra, Zenser Technologies and many more.",
-	"coursesTaught": ""
+"name":"Lingraj Nandi",
+"image":"",
+"specialty":"Java//J2EE",
+"position":"Professor",
+"description":"Lingraj has 10+ years of experience in corporate trainings and has handled 100+ corporate assignments, namely at NIIT, Tech Mahindra, Zenser Technologies and many more.",
+"coursesTaught":""
 },
 {
-	"name": "Victor Sarkar",
-	"image": "",
-	"specialty": "VNA",
-	"position": "Professor",
-	"description": "Victor Sarkar is a double graduate in Computer Science
-	 (& Electronics) and Commerce; along with 10 years of rich experience 
-	 in Business Development. Training has always attracted me to indulge 
-	 into new avenues and have nurtured a few of business Hubs across Asia, 
-	 Arizona (US) and Europe. Being a linguist my interests lies in phonetics 
-	 and morphology and am currently pursuing Masters in Communication (Linguistic) 
-	 and professional degrees (in Arts, Literature, &amp; Media – “American Literature 
-	 and Culture Certificate”; Education – “Learning Design and Technology Certificate”; 
-	 Global Studies – “International Relations Certificate”) from Harvard Extension School 
-	 for the year 2017 -2018.",
-	"coursesTaught": ""
-},
-{
-	"name": "Mohammed Mujahed",
-	"image": "",
-	"specialty": "Training Co-ordinator",
-	"position": "lv Staff",
-	"description": "Adaptive, diligent and determined individual with the knack of 
-	learning from hands- on approach. Self- motivated with sound communication and 
-	analytical skills. Business development and employee relations in departments",
-	"coursesTaught": ""
-}]
+"name":"Victor Sarkar",
+"image":"",
+"specialty":"VNA",
+"position":"Professor",
+"description":"Victor Sarkar is a double graduate in Computer Science (& Electronics) and Commerce; along with 10 years of rich experience  in Business Development. Training has always attracted me to indulge  into new avenues and have nurtured a few of business Hubs across Asia,  Arizona (US) and Europe. Being a linguist my interests lies in phonetics  and morphology and am currently pursuing Masters in Communication (Linguistic)  and professional degrees (in Arts, Literature, &amp; Media – “American Literature  and Culture Certificate”; Education – “Learning Design and Technology Certificate”;  Global Studies – “International Relations Certificate”) from Harvard Extension School  for the year 2017 -2018.",
+"coursesTaught":""
+},{
+"name":"Mohammed Mujahed",
+"image":"",
+"specialty":"Training Co-ordinator",
+"position":"lv Staff",
+"description":"Adaptive, diligent and determined individual with the knack of learning from hands- on approach. Self- motivated with sound communication and analytical skills. Business development and employee relations in departments",
+"coursesTaught":""
+}
+]
+
+
+
+
+
+

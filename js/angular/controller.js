@@ -20,9 +20,19 @@ virtue.controller('formCtrl', ['$scope', function($scope){
 	//$scope.selection = $scope.items[0];
 }]);
 
-virtue.controller('tabCtrl', ['$scope', function($scope){
+virtue.controller('tabCtrl', ['$scope', '$stateParams', function($scope, $stateParams){
 	$scope.tab = 'html5';
-	$scope.slab = 'ccna';
+	// $scope.slab = 'ccna';
+	var mod = $stateParams.mod;
+	if (!mod) {
+		$scope.slab = "ccna";
+		// $scope.tab = 'html5';
+	}
+	else{
+		$scope.slab = mod;
+	}
+
+
 	
 }]);
 
@@ -42,8 +52,8 @@ virtue.controller('contactCtrl', function($scope, $interval, NgMap){
 
 
 
-virtue.controller('calendarCtrl', function($scope) {
-
+virtue.controller('calendarCtrl', ['$scope','uiCalendarConfig', function($scope, uiCalendarConfig) {
+//console.log(uiCalendarConfig);
 		    var date = new Date();
     		var d = date.getDate();
     		var m = date.getMonth();
@@ -59,47 +69,67 @@ virtue.controller('calendarCtrl', function($scope) {
       {title: 'Linux Admin Course',
       start: new Date(y, 10, 14),
       end: new Date(y, 11, 14),
-      url: '/courses/linux'},
+      url: '/courses/linux',
+      //allDay: 'false'
+  },
 
       {title: 'CCIE Boot Camp',
       start: new Date(y, 10, 14),
       end: new Date(y, 11, 14),
-      url: '/courses/cisco'},
+      url: '/courses/cisco',
+  	  //allDay: 'false'
+},
 
       {title: 'Web Development',
       start: new Date(y, 10, 1),
       end: new Date(y, 11, 26),
-      url: '/courses/web-developer'},
+      url: '/courses/web-developer',
+      allDay: 'false'
+  },
 
       {title: 'Dev Ops',
       start: new Date(y, 10, 15),
-      end: new Date(y, 10, 26)},
+      end: new Date(y, 10, 26),
+      allDay: 'false'
+},
 
       {title: 'Corporate Ethics',
       start: new Date(y, 10, 15),
       end: new Date(y, 10, 26),
-      url: '/workshops'},
+      url: '/workshops',
+	  allDay: 'false'
+},
 
       {title: 'Communication Skills',
       start: new Date(y, 10, 18),
       end: new Date(y, 11, 2),
-      url: 'http://google.com/'},
+      //url: 'http://google.com/',
+	  allDay: 'false'
+},
 
       {title: 'Cloud Computing',
       start: new Date(y, 10, 20),
       end: new Date(y, 11, 2),
-      url: 'http://google.com/'},
+      //url: 'http://google.com/',
+	  allDay: 'false'
+},
 
 
       {title: 'Android',
       start: new Date(y, 11, 1),
       end: new Date(y, 11, 24),
-      url: 'http://google.com/'},
+      //url: 'http://google.com/',
+	  allDay: 'false'
+},
 
       {title: 'iOS & iOT',
-      start: new Date(y, 11, 5),
-      end: new Date(y, 11, 28),
-      url: 'http://google.com/'},
+      //start: new Date(y, 11, 5),
+      //end: new Date(y, 11, 28),
+      start: '2016-11-05T10:30:00',
+      end: '2017-01-05T10:30:00',
+      //url: 'http://google.com/',
+  allDay: 'false'
+},
 
 
 
@@ -111,17 +141,33 @@ virtue.controller('calendarCtrl', function($scope) {
       // {title: 'Click for Google',start: new Date(y, m, 28),end: new Date(y, m, 29),url: 'http://google.com/'}
     ];
 
+    $scope.colours = {
+    	color:'black',
+    	textColor: 'yellow',
+    	eventColor: '#378006'
+    }
+
     $scope.eventSource = {
-            url: "http://www.google.com/calendar/feeds/usa__en%40holiday.calendar.google.com/public/basic",
+            //url: "http://www.google.com/calendar/feeds/usa__en%40holiday.calendar.google.com/public/basic",
             className: 'gcal-event',           // an option!
-            currentTimezone: 'America/Chicago' // an option!
+            currentTimezone: 'America/Chicago', // an option!
+            color:'black',
+    		textColor: 'yellow'
+
     };
     /* eve
     /* config object */
     $scope.uiConfig = {
       calendar:{
-        height: 450,
-        editable: true,
+      				editable: false,
+			selectable: true,
+			eventLimit: true,
+			//weekends: false,
+			    	color:'black',
+    	textColor: 'yellow',
+    	eventColor: '#4fbf4f',
+        //height: 450,
+        //editable: true,
         header:{
           left: 'month basicWeek basicDay agendaWeek agendaDay',
           center: 'title',
@@ -130,13 +176,14 @@ virtue.controller('calendarCtrl', function($scope) {
         eventClick: $scope.alertEventOnClick,
         eventDrop: $scope.alertOnDrop,
         eventResize: $scope.alertOnResize,
-        eventRender: $scope.eventRender
+        eventRender: $scope.eventRender,
       }
     };
-        $scope.eventSources = [$scope.events, $scope.eventSource, $scope.eventsF];
+        $scope.eventSources = [$scope.events, $scope.eventSource, $scope.colours];
+        //console.log($scope.eventSources);
     	//$scope.eventSources2 = [$scope.calEventsExt, $scope.eventsF, $scope.events];
 
-});
+}]);
 
 
 virtue.controller('advertScrollCtrl', function(){
@@ -165,4 +212,49 @@ $('.scroll-arrow').each(function(){
 });
 	
 });
+
+virtue.controller('trainerCtrl', function($scope, trainerFactory, $location, $anchorScroll){
+	
+	activate();
+
+	$scope.trainerDetail = {};
+
+
+	function scrollToDetails(){
+		console.log('scrolling !!');
+		$location.hash('trainerDesc');
+		$anchorScroll();
+	}
+
+
+	$scope.showDetail = function(trainer){
+		$location.hash('');
+		$scope.trainerDetail = trainer;
+		$('#trainerDesc').show();
+		scrollToDetails();
+
+	}
+
+	function activate(){
+		getTrainerData();
+		$('#trainerDesc').hide();
+	}
+
+	function scrollToDiv(){
+
+	}
+
+
+
+	function getTrainerData(){
+		trainerFactory.then(function(res){
+			//console.log(res);
+			$scope.data = res.data;
+			console.log($scope.data);
+
+		}) //end then
+	}
+
+
+}); //end trainerCtrl
 

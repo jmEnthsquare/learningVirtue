@@ -53,6 +53,14 @@ div.inline p > span{
 
 }
 
+.staffSlides {
+ /* height: 100px;
+*/  border: 1px solid silver;
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+}
+
 .context{
     height: 100%;
   border: 1px solid silver;
@@ -62,15 +70,34 @@ div.inline p > span{
 
 
 .shelf { height: 100px; width: 100%; background-color: #c7c7c7; position: relative;}
+
+.shelf-staff { 
+  /*height: 100px;*/ 
+  width: 100%; 
+  /*background-color: #c7c7c7; */
+  /*position: relative;*/
+}
+
+
+
 .inside { position: absolute; left: 0px; right: 0px; bottom: 0px; top: 0px; white-space: nowrap; font-size: 0; line-height: 0; overflow-x: scroll;}
+
+.inside-staff { position: absolute; left: 0px; right: 0px; bottom: 0px; top: 0px; white-space: nowrap; font-size: 0; line-height: 0; overflow-x: scroll;}
+
 .left { left: 0;}
 .right { right: 0;}
 
 .contexted { display: inline-block; width: 150px; height: 100%; background-color: #797979; margin-right: 10px;}
 
-
+.contexted-staff { display: inline-block; width: 150px; height: 100%; background-color: #797979; margin-right: 10px;}
 
 .advertSlides h3 {
+  line-height: 4;
+  color: white;
+  text-align: center;
+}
+
+.staffSlides h3 {
   line-height: 4;
   color: white;
   text-align: center;
@@ -117,18 +144,23 @@ top: 25px;
   font-weight: bolder;
   color: #70e578;
 }
+
 .br{
   
 }
+
 .cta{
  background:url('../images/parallax1.jpg');
 }
+
 .galleryparallax{
   background: url('../images/parallax2.jpg');
 }
+
 .white{
   color: white;
 }
+
 @media (max-width: 991px) {
   .clearboth {
     clear: both;
