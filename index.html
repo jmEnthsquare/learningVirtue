@@ -75,7 +75,7 @@
                         </li>
                         <li><a ui-sref="career">Careers</a></li>
                         <li class="dropdown">
-                            <a ui-sref="train.training">Training</a>
+                            <a>Training</a>
                             <ul class="dropdown-menu">
                             <li>
                             <a ui-sref="training">Find a Training</a></li>
@@ -105,10 +105,10 @@
                                     </ul> -->
                                 </li>
                                 <li>
-                                    <a ui-sref="calendar">Calendar</a>
+                                    <a ui-sref="train.training">Events</a>
                                 </li>
                                 <li>
-                                    <a ui-sref="career">Career Goals</a>
+                                    <a ui-sref="careers">Career Goals</a>
                                 </li>
                             
                         </li>
@@ -135,7 +135,7 @@
                               CONTENT
     =========================================================-->
     <div id="divHolder" class="clearfix">
-         <ui-view class="clearfix"></ui-view>
+         <ui-view autoscroll="true" class="clearfix"></ui-view>
     </div>
 
     <!--========================================================

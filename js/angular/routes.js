@@ -36,11 +36,18 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 		templateUrl: '/views/about.html'
 	}
 
-	var careerState = {
+	var careerGoalsState = {
 		name: 'career',
 		url: '/career',
-		templateUrl: './views/career.html'
+		templateUrl: './views/careerGoals.html'
 	}
+
+	var careerState = {
+		name: 'careers',
+		url: '/careers',
+		templateUrl: './views/careers.html'
+	}
+
 
 	var loginState = {
 		name: 'login',
@@ -79,6 +86,19 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 		templateUrl: './views/courses/linux.html'
 	}
 
+	var javaCourseState = {
+		name: 'java',
+		url: '/courses/java',
+		templateUrl: './views/courses/java.html'
+	}
+
+	var dbaCourseState = {
+		name: 'dba',
+		url: '/courses/dba',
+		templateUrl: './views/courses/dba.html'
+	}
+
+
 	var uiuxCourseState = {
 		name: 'ui-ux',
 		url: '/courses/ui-ux',
@@ -107,8 +127,8 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 	}
 
 	var c2cState = {
-		name: 'college-corperate',
-		url:'/courses/college-corperate',
+		name: 'college-corporate',
+		url:'/courses/college-corporate',
 		controller: 'tabCtrl',
 		templateUrl: './views/courses/c2c.html'
 	}
@@ -125,12 +145,15 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 	$stateProvider.state(hofState);
 	$stateProvider.state(aboutState);
 	$stateProvider.state(careerState);
+	$stateProvider.state(careerGoalsState);
 	$stateProvider.state(loginState);
 	$stateProvider.state(contactState);
 	$stateProvider.state(mythFactState);
 	$stateProvider.state(opportunitiesState);
 	$stateProvider.state(trainingState);
 	$stateProvider.state(linuxCourseState);
+	$stateProvider.state(javaCourseState);
+	$stateProvider.state(dbaCourseState);
 	$stateProvider.state(uiuxCourseState);
 	$stateProvider.state(ciscoCourseState);
 	$stateProvider.state(webDeveloperState);
