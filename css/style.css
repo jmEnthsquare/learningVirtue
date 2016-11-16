@@ -27,23 +27,26 @@
 .blurb{
   border-radius: 20px;
   background-color: white;
-  margin: 10px;
-  padding: 10px;
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+  margin: 0 0 0 20px;
+  padding: 30px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
   position: relative;
-  left: 30%;
-  float: right;
-  width: 70%;
+  top: 90px;
 }
+
 .blurb h1, .blurb p {
   color: #55dc69;
 }
 
 
-.marked-list-skin > li > span {
-  color: green;
+.marked-list-skin > li > span > a {
+  color: green; 
+}
+
+.marked-list-skin > li {
+  color: grey;
 }
 div.inline p > span{
   font-weight: bold;
@@ -105,7 +108,7 @@ div.inline p > span{
 
 
 
-.inside { position: absolute; left: 0px; right: 0px; bottom: 0px; top: 0px; white-space: nowrap; font-size: 0; line-height: 0; overflow-x: scroll;}
+.inside { position: absolute; left: 0px; right: 0px; bottom: 0px; top: 0px; white-space: nowrap; font-size: 0; line-height: 0; overflow-x: hidden;}
 
 .inside-staff { position: absolute; left: 0px; right: 0px; bottom: 0px; top: 0px; white-space: nowrap; font-size: 0; line-height: 0; overflow-x: scroll;}
 
@@ -180,6 +183,9 @@ top: 25px;
 
 .galleryparallax{
   background: url('../images/parallax2.jpg');
+}
+.para-laxing {
+  background: url('../images/parallax3.jpg');
 }
 
 .white{
