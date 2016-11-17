@@ -40,6 +40,9 @@
   color: #55dc69;
 }
 
+div.blurb > ul.marked-list-skin > li {
+  color: grey;
+}
 
 .marked-list-skin > li > span > a {
   color: green; 
