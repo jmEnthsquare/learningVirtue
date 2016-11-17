@@ -1024,7 +1024,7 @@ div.goalButtons button{
   width: 10em;
   height: 10em;
   position: absolute;
-  z-index: 100000;
+  
   color: white;
   
   /* Add vendor prefixes as needed */
