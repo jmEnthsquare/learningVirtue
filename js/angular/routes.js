@@ -119,6 +119,14 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 
 	}
 
+	var AdvancedWebDeveloperState = {
+		name: 'web-developer-2',
+		url: '/courses/web-developer-2',
+		templateUrl: './views/courses/webdeveloperII.html'
+
+	}
+
+
 	var calendarState = {
 		name: 'calendar',
 		url: '/calendar',
@@ -157,9 +165,11 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 	$stateProvider.state(uiuxCourseState);
 	$stateProvider.state(ciscoCourseState);
 	$stateProvider.state(webDeveloperState);
+	$stateProvider.state(AdvancedWebDeveloperState);
 	$stateProvider.state(calendarState);
 	$stateProvider.state(c2cState);
 	$stateProvider.state(workshopState);
+
 
 	$stateProvider.state('train',{
 		abstract: true,

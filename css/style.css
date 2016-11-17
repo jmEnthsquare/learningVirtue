@@ -45,13 +45,21 @@
   color: green; 
 }
 
-.marked-list-skin > li {
+.grey-list-skin {
   color: grey;
 }
 div.inline p > span{
   font-weight: bold;
   text-decoration: underline;
 }
+
+.linkLight {
+  float: right;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
 #divHolder{
   
   min-height: 500px;
