@@ -147,6 +147,26 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 		templateUrl: './views/workshops.html'
 	}
 
+	var whyLinuxState = {
+		name: 'why-linux',
+		url: '/why-linux',
+		templateUrl: './views/why/why-linux.html'
+	}
+
+	var whyNetworkState = {
+		name: 'why-network',
+		url: '/why-network',
+		templateUrl: './views/why/why-networking.html'
+	}
+
+
+var whyDevelopState = {
+		name: 'why-develop',
+		url: '/why-develop',
+		templateUrl: './views/why/why-development.html'
+	}
+
+
 	$stateProvider.state(homeState);
 	$stateProvider.state(page404State);
 	$stateProvider.state(staffState);
@@ -169,6 +189,9 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 	$stateProvider.state(calendarState);
 	$stateProvider.state(c2cState);
 	$stateProvider.state(workshopState);
+	$stateProvider.state(whyLinuxState);
+	$stateProvider.state(whyNetworkState);
+	$stateProvider.state(whyDevelopState);
 
 
 	$stateProvider.state('train',{

@@ -9,7 +9,7 @@
 	var morgan = require('morgan'); // logs all requests to console
 	var mongoose = require('mongoose'); //ORM 
 	var path = require('path');
-	var port = 80;
+	var port = 3100;
 
 
 

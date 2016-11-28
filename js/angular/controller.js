@@ -21,7 +21,9 @@ virtue.controller('formCtrl', ['$scope', function($scope){
 }]);
 
 virtue.controller('tabCtrl', ['$scope', '$stateParams', function($scope, $stateParams){
-	$scope.tab = 'html5';
+  
+	$scope.tab   = 'html5';
+  $scope.level = 'entry';
 	// $scope.slab = 'ccna';
 	var mod = $stateParams.mod;
 	if (!mod) {
