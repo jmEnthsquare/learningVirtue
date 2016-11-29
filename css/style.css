@@ -85,15 +85,25 @@ div.inline p > span{
 
 .whyConnect{
 
-height: 100px;
+height: 50px;
 width: 25%;
-display: inline-block;
+display: none;
 position: absolute;
 z-index: 99;
 bottom: 250px;
 background-color: #70e578;
 left: 700px;
+-webkit-transition: all 1s ease;
+   -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+     -o-transition: all 1s ease;
+        transition: all 1s ease;
 
+}
+
+.whyConnect:hover {
+      background-color: white;
+      border: 1px solid #70e578;
 }
 
 

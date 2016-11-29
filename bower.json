@@ -1,0 +1,22 @@
+{
+  "name": "learningvirtue",
+  "description": "Learning Virtue website for enthsquare",
+  "main": "haha.js",
+  "authors": [
+    "Jerome Moore"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "Learning",
+    "Virtue"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
