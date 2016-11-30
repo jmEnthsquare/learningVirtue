@@ -142,6 +142,34 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 		templateUrl: './views/courses/c2c.html'
 	}
 
+	var communicationTrainingState = {
+		name: 'communication-training',
+		url:'/courses/communication',
+		controller: 'scrollCtrl',
+		templateUrl: './views/courses/communication.html'
+	}
+
+	var accentTrainingState = {
+		name: 'accent-training',
+		url:'/courses/accent',
+		controller: 'scrollCtrl',
+		templateUrl: './views/courses/voice-accent.html'
+	}
+
+	var englishTrainingState = {
+		name: 'english-training',
+		url:'/courses/english',
+		controller: 'scrollCtrl',
+		templateUrl: './views/courses/english.html'
+	}
+
+	var softSkillsTrainingState = {
+		name: 'soft-skills',
+		url: '/courses/soft-skills',
+		templateUrl: './views/courses/soft-skills.html'
+	}
+
+
 	var workshopState = {
 		name: 'workshops',
 		url: '/workshops',
@@ -165,6 +193,12 @@ var whyDevelopState = {
 		name: 'why-develop',
 		url: '/why-develop',
 		templateUrl: './views/why/why-development.html'
+	}
+
+var newsState = {
+		name: 'news',
+		url: '/news',
+		templateUrl: './views/news.html'
 	}
 
 
@@ -193,7 +227,11 @@ var whyDevelopState = {
 	$stateProvider.state(whyLinuxState);
 	$stateProvider.state(whyNetworkState);
 	$stateProvider.state(whyDevelopState);
-
+	$stateProvider.state(newsState);
+	$stateProvider.state(communicationTrainingState);
+	$stateProvider.state(accentTrainingState);
+	$stateProvider.state(englishTrainingState);
+	$stateProvider.state(softSkillsTrainingState);
 
 	$stateProvider.state('train',{
 		abstract: true,

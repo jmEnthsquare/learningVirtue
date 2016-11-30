@@ -6248,6 +6248,14 @@ a.list-group-item-danger.active:focus {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
+.well2top{
+  padding-top: 50px;
+}
+.well2bottom{
+  padding-bottom: 50px;
+}
+
 .well3 {
   padding-top: 172px;
   padding-bottom: 160px;
