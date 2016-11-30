@@ -131,6 +131,7 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 		name: 'calendar',
 		url: '/calendar',
 		controller: 'calendarCtrl',
+		controller: 'scrollCtrl',
 		templateUrl: './views/calendar.html'
 	}
 

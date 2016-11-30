@@ -3,4 +3,4 @@
 *
 * Description
 */
-angular.module('virtue', ['ui.router','angular-parallax','ngAnimate','ngMap','ui.calendar']);
+angular.module('virtue', ['ui.router','angular-parallax','ngAnimate','ngMap','ui.calendar','duScroll']);

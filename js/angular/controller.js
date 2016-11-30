@@ -21,7 +21,7 @@ virtue.controller('formCtrl', ['$scope', function($scope){
 }]);
 
 virtue.controller('tabCtrl', ['$scope', '$stateParams', function($scope, $stateParams){
-  
+
 	$scope.tab   = 'html5';
   $scope.level = 'entry';
 	// $scope.slab = 'ccna';
@@ -225,6 +225,7 @@ virtue.controller('trainerCtrl', function($scope, trainerFactory, $location, $an
 	function scrollToDetails(){
 		console.log('scrolling !!');
 		$location.hash('trainerDesc');
+    $anchorScroll.yOffset = 200;
 		$anchorScroll();
 	}
 
@@ -259,4 +260,8 @@ virtue.controller('trainerCtrl', function($scope, trainerFactory, $location, $an
 
 
 }); //end trainerCtrl
+
+virtue.controller('scrollCtrl', function($document, $scope){
+  
+}).value('duScrollOffset', 200);
 

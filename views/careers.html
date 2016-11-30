@@ -1,4 +1,4 @@
-<main class="tophat">
+<main class="tophat" ng-controller="scrollCtrl">
           <section class="parallax para-laxing well3" data-url="images/parallax2.jpg" data-mobile="true">
             <div class="container text-right center767 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s">
                 <h1>Career Goals</h1>
@@ -23,38 +23,38 @@
             
                             <tr>
                                 <td><a ui-sref="linux">Linux Administrator</a></td>
-                                <td>Graduation Done? Don't know what to do next? <span class="linkLight"> <a ui-sref="careers">More Info ></a></span>
+                                <td>Graduation Done? Don't know what to do next? <span class="linkLight"> <a du-smooth-scroll="section-1" du-scrollspy>More Info ></a></span>
                                 </td>
                             </tr>
             
                             <tr>
                                 <td><a ui-sref="ui-ux">UI/UX Development</a></td>
-                                <td>Graduated with a non-IT background, But want to switch to an IT role? <span class="linkLight"> <a ui-sref="ui-ux">More Info ></a></span>
+                                <td>Graduated with a non-IT background, But want to switch to an IT role? <span class="linkLight"> <a du-smooth-scroll="section-2" du-scrollspy>More Info ></a></span>
                                 </td>
                             </tr>
             
                             <tr>
                                 <td><a ui-sref="java">Software Engineer</a></td>
-                                <td>Are you an IT Guru, but lack communication skills? <span class="linkLight"> <a ui-sref="careers">More Info ></a></span>
+                                <td>Are you an IT Guru, but lack communication skills? <span class="linkLight"> <a du-smooth-scroll="section-3" du-scrollspy>More Info ></a></span>
                                 </td>
                             </tr>
             
                             <tr>
                                 <td><a ui-sref="web-developer">Web Developer</a>
                                 </td>
-                                <td>Did you lose an oppurtunity because of your language skills? <span class="linkLight"> <a ui-sref="careers">More Info ></a></span>
+                                <td>Did you lose an oppurtunity because of your language skills? <span class="linkLight"> <a du-smooth-scroll="section-4" du-scrollspy>More Info ></a></span>
                                 </td>
                             </tr>
             
                             <tr>
                                 <td><a ui-sref="cisco">Network Engineer</a></td>
-                                <td>Want to build your interpersonal & Communication skills? <span class="linkLight"> <a ui-sref="careers">More Info ></a></span>
+                                <td>Want to build your interpersonal & Communication skills? <span class="linkLight"> <a du-smooth-scroll="section-5" du-scrollspy>More Info ></a></span>
                                 </td>
                             </tr>
             
                             <tr>
                                 <td><a ui-sref="dba">DataBase Administrator</a></td>
-                                <td>Training/Software fields appeal to you? <span class="linkLight"> <a ui-sref="careers">More Info ></a></span>
+                                <td>Training/Software fields appeal to you? <span class="linkLight"> <a du-smooth-scroll="section-6" du-scrollspy>More Info ></a></span>
                                 </td>
                             </tr>
             
@@ -95,10 +95,9 @@
             
 
             <section class="well2">
-                <div class="container">
+                <div class="container" id="section-1">
                     <div class="row">
                         <dl class="term-list">
-
                         <dt class="h3 text-primary">Graduation Done? Don't know what to do next?</dt>
 
                         <dd>Don’t worry! It is a common woe which every fresh graduate goes through. But we are not here to preach, we are here to take you forward.
@@ -125,7 +124,7 @@ Third and the most important point is that after graduation, there is a sea of o
 <li>Voice and Accent Trainer</li>
 </ul>
 
-                        <dt class="h3 text-primary">Graduated in non IT, now want to become an IT Professional?</dt>
+                        <dt class="h3 text-primary" id="section-2">Graduated in non IT, now want to become an IT Professional?</dt>
 
                         <dd>You got it! Yes, that is right, it is possible – with us. If you have not graduated in an IT field, you can still be trained with us to become an IT professional.
 This is how…
@@ -141,7 +140,7 @@ We have put together courses that will enable you to become a trained IT profess
                             <li>CCNA Trainer Professional </li>
                         </ul>
 
-                        <dt class="h3 text-primary">Are you an IT Guru, but lack communication skills?</dt>
+                        <dt class="h3 text-primary" id="section-3">Are you an IT Guru, but lack communication skills?</dt>
 
                         <dd>We understand! In our professional careers, we have noticed that our talented IT professionals, though highly skilled in IT, have almost always faced challenges communicating their ideas or thoughts. That is a big drawback.</dd> <br>
 
@@ -165,7 +164,7 @@ We have built separate modules to cater to the separate needs of a learner. <br>
 </li>
 </ul>
 
-<dt class="h3 text-primary">Did you lose an opportunity because you were not able to speak up?</dt> 
+<dt class="h3 text-primary" id="section-4">Did you lose an opportunity because you were not able to speak up?</dt> 
 <dd>Don’t fret, we got you! Each of us has been in a situation where we have lost out on opportunities just because we haven’t been able to speak up or haven’t been able to come up with a suitable response to a given situation.
 Upon some surveys we conducted and based on our research, we found that the following are the main reasons for the hesitation to speak up:</dd>
 
@@ -195,7 +194,7 @@ Upon some surveys we conducted and based on our research, we found that the foll
 </ul>
 
 
-<dt class="h3 text-primary">Want to build up your personality & communication to crack an interview</dt>
+<dt class="h3 text-primary" id="section-5">Want to build up your personality & communication to crack an interview</dt>
 
 
 <dd>We are here to help! Sooner or later we realize that we aren’t able to crack all the interviews we face. A rejection in an interview can be very de motivating. The first thought that comes to our mind is ‘I’m not good enough for that company, that’s why I didn’t get through’.
@@ -213,7 +212,7 @@ Upon our intense research and survey, we have built the following training progr
 <li>Communication Skills </li>
 </ul>
 
-<dt class="h3 text-primary">Training field appeals to you?</dt>
+<dt class="h3 text-primary" id="section-6">Training field appeals to you?</dt>
 
 
 <dd>Good! It appeals to us too. Training is a passion for us. If you have the same passion, we have world class Train the Trainer (TTT) Programs for you.

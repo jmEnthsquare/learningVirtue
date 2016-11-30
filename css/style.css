@@ -62,6 +62,7 @@ div.inline p > span{
   float: right;
   font-weight: bold;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 
