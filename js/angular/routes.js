@@ -142,6 +142,13 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 		templateUrl: './views/courses/c2c.html'
 	}
 
+		var facilitationState = {
+		name: 'facilitation',
+		url:'/courses/facilitation',
+		controller: 'tabCtrl',
+		templateUrl: './views/courses/facilitation.html'
+	}
+
 	var communicationTrainingState = {
 		name: 'communication-training',
 		url:'/courses/communication',

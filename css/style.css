@@ -1148,6 +1148,32 @@ div.field-wrap input {
   float: left;
 }
 */
+
+/* Home Page Table */
+
+.greenDiv {
+  background-color: #55dc69;
+  color: black;
+}
+
+.greenDiv h3 {
+  color: white;
+}
+
+table.homeTable, .homeTable p {
+  color: black;
+ 
+}
+
+table.homeTable th {
+  background-color: black;
+  color: #70e578;
+}
+
+.stretch {
+  width: 90%;
+}
+
 /*========================================================
                      CONTENT  Section
 =========================================================*/
