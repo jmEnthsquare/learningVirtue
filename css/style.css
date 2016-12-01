@@ -36,6 +36,9 @@
   top: 90px;
 }
 
+.navbar-nav {
+  cursor: pointer;
+}
 
 
 .blurb h1, .blurb p {

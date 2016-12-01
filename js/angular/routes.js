@@ -201,6 +201,12 @@ var newsState = {
 		templateUrl: './views/news.html'
 	}
 
+var supportState = {
+	name: 'support',
+	url: '/support',
+	templateUrl: './views/support.html'
+}
+
 
 	$stateProvider.state(homeState);
 	$stateProvider.state(page404State);
@@ -232,6 +238,7 @@ var newsState = {
 	$stateProvider.state(accentTrainingState);
 	$stateProvider.state(englishTrainingState);
 	$stateProvider.state(softSkillsTrainingState);
+	$stateProvider.state(supportState);
 
 	$stateProvider.state('train',{
 		abstract: true,
