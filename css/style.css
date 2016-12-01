@@ -259,6 +259,9 @@ top: 25px;
   .clearboth {
     clear: both;
   }
+  .homeTableDiv {
+    margin-top: 20px;
+  }
 }
 h3.text-primary a:hover {
   color: #333333;
@@ -1166,7 +1169,7 @@ table.homeTable, .homeTable p {
 }
 
 table.homeTable th {
-  background-color: black;
+  background-color: #2f2f2f;
   color: #70e578;
 }
 

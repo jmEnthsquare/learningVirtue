@@ -1,10 +1,38 @@
 <main class="tophat">
-		<section class="well2">
-			<div class="container">
-				<div class="row offs">
-					<h1>Bringing the News</h1>
-					<p>I wanto to be a part of it</p>
-				</div>
-			</div>
-		</section>
+<section class="parallax para-laxing well3" data-url="images/parallax2.jpg" data-mobile="true">
+            <div class="container text-right center767 wow fadeInLeft" data-wow-duration="2s" data-wow-delay="0.2s">
+                <h1>News and Announcements</h1>
+
+                <p>As a member of the IT community, you never start learning. As IT remains at the edge of cutting edge technology, it is pivotal to your career to keep up with the advancements and tech releases. </p>
+                <!-- <a href="#" class="btn btn-primary">Read More</a>
+ -->            </div>
+        </section>
+		        <section class="well2">
+            <div class="container" ng-controller="rssCtrl">
+
+                <accordion class="accordion" ng-repeat="feed in feeds ">
+                    <div class="accordion_header wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.4s">
+                        <time class="h3" datetime="2015-01-01">{{feed.author}}</time> <br> <br>
+                        <h3> {{feed.title}} </h3>
+                    </div>
+
+                    <article class="accordion_cnt row center767">
+                        <div class="col-md-5 col-sm-6 col-xs-12 mg-add">
+                            <figure class="thumbnail">
+                                <a href="{{feed.link}}" target="_blank"><img src="{{feed.mediaGroups[0].contents[0].thumbnails[0].url}}" alt=""/></a>
+                            </figure>
+                        </div>
+                        <div class="col-md-7 col-sm-6 col-xs-12">
+                            {{feed.contentSnippet}} <br>
+                            <a href="{{feed.link}}" target="_blank" class="btn btn-primary">Read More</a>
+                        </div>
+                    </article>
+                    <div class="container">
+                        <hr/>
+                    </div>
+      
+                </accordion>
+            </div>
+
+        </section>
 	</main>	

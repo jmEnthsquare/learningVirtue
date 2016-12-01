@@ -6,7 +6,7 @@
                     <div class="camera_caption fadeIn">
                         <div class="container">
                             <h1>Helping each of our<br/>
-                                students fulfill the potential</h1>
+                                students fulfill the potential</h1>     
 
                             <p>Learning Virtue has a robust learning structure which guides each participant from the start to the <br>
 
@@ -234,7 +234,7 @@ principles.</p>
         <div class="col-md-9 well2top">
 
             
-            <div>
+            <div class="homeTableDiv">
                         <table class="homeTable">
                             <tr>
                                 <th>I'm sure of my career goals</th>
@@ -323,27 +323,30 @@ principles.</p>
 
 
 <section class="well2">
-    <div class="container">
+    <div class="container" ng-controller="rssCtrl">
         
-        <div class="col-md-6">
-                <h2>Latest News</h2>
+        <div class="col-md-12">
+        <!-- <h1>Latest News</h1> <br> -->
+        <div ng-repeat="feed in feeds | limitTo: numberOfPostsPerPage:startPoint ">
+                <h2> <a target="_blank" href="{{feed.link}}"> {{feed.title}} </a></h2>
                 <div class="container horizon"></div>
                 <div class="row">
-                <div class="content">
+                <div class="content" >
                     <div class="media">
-  <div class="media-left media-middle" ng-hide="true">
-    <a href="#">
-      <img class="media-object thumbnail" src="images/page-2_img02.jpg" height="126px" width="170px" alt="...">
+  <div class="media-left media-middle">
+    <a target="_blank" href="{{feed.link}}">
+      <img class="media-object thumbnail" src="{{feed.mediaGroups[0].contents[0].thumbnails[0].url}}" height="126px" width="170px" alt="...">
     </a>
   </div>
   <div class="media-body">
-  <h3 class="media-heading">Smile candid camera</h3>
+  <h3 class="media-heading">{{feed.author}}</h3>
 
   <div class="hblock">
-                    <p>SOCIAL</p>
+                    <p>Author</p>
                     </div><br>
-        <p>Learning Virtue is a sister company to Enthsquare – a leading IT Solutions company in the U.S., operating out of New Jersey, Virginia, California and Hyderabad in India.</p>  </div><div class="timestampLatest"><time class="h3" datetime="2015-01-01">07 June 2015  </time></div>
-</div>
+        <p>{{feed.contentSnippet}}</p>  </div><div class="timestampLatest"><time class="h3" datetime="2015-01-01">{{feed.publishedDate}}  </time></div>
+</div> <a ui-sref="news" class="btn btn-primary">Read More</a>
+ </div>
 <div class="md-col-9"><hr></div>
                 </div>
                 </div>
@@ -351,7 +354,7 @@ principles.</p>
 
             </div>
 
-            <div class="col-md-6">
+           <!--  <div class="col-md-6">
                 <h2>Latest Courses</h2>
                 <div class="container horizon"></div>
                 <div class="row">
@@ -466,7 +469,7 @@ principles.</p>
 </div>
 <div class="md-col-9"><hr></div>
                 </div>
-                </div>
+                </div> -->
 
 
             </div>

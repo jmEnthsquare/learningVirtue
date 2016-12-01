@@ -1,6 +1,8 @@
 'use strict';
 
 var virtue = angular.module('virtue');
+var feedUrl = 'http://www.networkworld.com/category/education/index.rss';
+
 
 virtue.controller('formCtrl', ['$scope', function($scope){
 
@@ -264,4 +266,65 @@ virtue.controller('trainerCtrl', function($scope, trainerFactory, $location, $an
 virtue.controller('scrollCtrl', function($document, $scope){
   
 }).value('duScrollOffset', 200);
+
+virtue.controller('rssCtrl', ['$scope' , 'FeedService', '$window', function($scope, Feed, $window){
+      
+      $scope.numberOfPostsPerPage = 5;
+      $scope.totalPosts = null;
+      $scope.startPoint = 0;
+      $scope.pages = null;
+      $scope.pagesArray = []
+
+      function setPagesArray() {
+        for(var i = 0; i < $scope.pages; i++){
+          $scope.pagesArray.push(i+1);
+        }
+      }
+      
+      activate();
+
+      function activate(){
+        getPosts()
+        .then(getNumPages)
+        .then(setPagesArray);
+      }
+
+
+
+
+    function getPosts(){
+      return Feed.parseFeed().then(function(res){
+        $scope.feeds = res.data.responseData.feed.entries;
+        console.log($scope.feeds);
+
+          return $scope.totalPosts = $scope.feeds.length;
+         
+
+      });
+
+    } //end getPosts
+
+    function getNumPages(){
+
+          var pages = $scope.totalPosts/$scope.numberOfPostsPerPage;
+          return $scope.pages = Math.ceil(pages);
+                  console.log($scope.pages);
+      
+    }
+
+    $scope.pageTurn = function(pageNumber){
+      $scope.startPoint = (pageNumber - 1)* $scope.numberOfPostsPerPage;
+      $window.scrollTo(0,0);
+      return $scope.startPoint;
+    }
+
+    $scope.pageTurn();
+
+
+
+
+
+  
+}]);
+
 
