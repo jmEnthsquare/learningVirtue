@@ -64,10 +64,27 @@ div.inline p > span{
 .linkLight {
   float: right;
   font-weight: bold;
-  text-decoration: underline;
-  cursor: pointer;
+  /*text-decoration: underline;
+  cursor: pointer;*/
 }
 
+.jumboCta {
+background: rgba(255,255,255,0.6);
+color: black;
+border-radius: 20px;
+display: block;
+
+}
+
+.jumboCta h1 {
+  margin: 30px;
+}
+
+
+ .jumboCta p {
+  margin: 30px;
+  font-family: helvetica;
+}
 
 #divHolder{
   
@@ -78,6 +95,7 @@ div.inline p > span{
 
 .whyCircle{
   border-radius: 150px;
+  border: 5px solid #55dc69;
   background: #70e578;
   width: 200px;
   height: 200px;
@@ -114,6 +132,12 @@ left: 700px;
 .whyCircleText {
   text-align: center;
   padding-top: 25%;
+  }
+.whyCircleText p {
+  margin: 0 auto;
+}
+.whyCircleText h3 {
+  margin-top: 20px;
 }
 
 .whyInnerDiv {
@@ -921,7 +945,6 @@ div.goalButtons button{
 .toggle{
   padding: 15px 30px;
   color: whitesmoke;
-  border-radius: 20px;
   border-style: inherit;
   background-color: #70e578;
   -webkit-transition: all 1s ease;
@@ -948,8 +971,7 @@ div.goalButtons button{
 .sendForm{
   padding: 15px 30px;
   background-color: whitesmoke;
-  border-radius: 20px;
-  border: 1px solid #673e68;
+    border: 1px solid #673e68;
   color: #673e68;
   -webkit-transition: all .25s ease;
      -moz-transition: all .25s ease;

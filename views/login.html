@@ -3,8 +3,8 @@
 		<div class="container">
 		<div class="signupdiv">
 		<div class="goalButtons">
-         <button class="toggle"  ng-click="showSignup = true; showLogin = false; forgotPassword = false;"  ng-class='{"toggled": showSignup != false}' id="registerBtn">Register</button>
-         <button class="toggle" ng-click="showSignup = false; showLogin = true; forgotPassword = false;"  ng-class='{"toggled": showSignup == false}' id="loginBtn">Login</button>
+         <button class="toggle btn"  ng-click="showSignup = true; showLogin = false; forgotPassword = false;"  ng-class='{"toggled": showSignup != false}' id="registerBtn">Register</button>
+         <button class="toggle btn" ng-click="showSignup = false; showLogin = true; forgotPassword = false;"  ng-class='{"toggled": showSignup == false}' id="loginBtn">Login</button>
             </div>
 		<div class="form">
       <div class="tab-content form-body">
@@ -58,7 +58,7 @@
 		
 
           <br>
-          <button type="submit" class="button button-block sendForm">Get Started!</button>
+          <button type="submit" class="button btn button-block sendForm">Get Started!</button>
           
           </form>
 
@@ -87,7 +87,7 @@
           
           <p class="forgot link"><a ng-click="forgotPassword = true; showSignup = false; showLogin = false;" >Forgot Password?</a></p>
           
-          <button class="button button-block sendForm">Log In</button>
+          <button class="button btn button-block sendForm">Log In</button>
           
           </form>
 
@@ -117,7 +117,7 @@
           
           <!-- <p class="forgot"><a href="#" ng-click="forgotPassword = true" >Forgot Password?</a></p> -->
           
-          <button class="button button-block sendForm">Reset Password</button>
+          <button class="button btn button-block sendForm">Reset Password</button>
           
           </form>
 
