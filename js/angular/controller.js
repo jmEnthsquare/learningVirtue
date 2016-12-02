@@ -48,7 +48,7 @@ virtue.controller('contactCtrl', function($scope, $interval, NgMap){
 			map.customMarkers.lv.setPosition(this.getPosition());
 		};
 		$scope.closeCustomMarker = function(evt){
-			//this.style.display = 'none';
+			this.style.display = 'none';
 		}
 
 	})
