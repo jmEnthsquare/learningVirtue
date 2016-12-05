@@ -263,9 +263,20 @@ virtue.controller('trainerCtrl', function($scope, trainerFactory, $location, $an
 
 }); //end trainerCtrl
 
-virtue.controller('scrollCtrl', function($document, $scope){
-  
+virtue.controller('scrollCtrl', function($document, $scope, $location, $anchorScroll, $stateParams){
+   var hashValue = $stateParams.hash;
+   
+   if(!hashValue){
+    //
+   }else{
+    $anchorScroll.yOffset = 160;
+    setTimeout(function(){
+      $anchorScroll(hashValue);
+    }, 100)
+   }
+
 }).value('duScrollOffset', 200);
+
 
 virtue.controller('rssCtrl', ['$scope' , 'FeedService', '$window', function($scope, Feed, $window){
       

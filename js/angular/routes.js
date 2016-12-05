@@ -42,13 +42,6 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 		templateUrl: './views/careerGoals.html'
 	}
 
-	var careerState = {
-		name: 'careers',
-		url: '/careers',
-		templateUrl: './views/careers.html'
-	}
-
-
 	var loginState = {
 		name: 'login',
 		url: '/login',
@@ -214,13 +207,19 @@ var supportState = {
 	templateUrl: './views/support.html'
 }
 
+	// var careerState = {
+	// 	name: 'careers',
+	// 	url: '/careers',
+	// 	templateUrl: './views/careers.html'
+	// }
+
 
 	$stateProvider.state(homeState);
 	$stateProvider.state(page404State);
 	$stateProvider.state(staffState);
 	$stateProvider.state(hofState);
 	$stateProvider.state(aboutState);
-	$stateProvider.state(careerState);
+	//$stateProvider.state(careerState);
 	$stateProvider.state(careerGoalsState);
 	$stateProvider.state(loginState);
 	$stateProvider.state(contactState);
@@ -246,6 +245,17 @@ var supportState = {
 	$stateProvider.state(englishTrainingState);
 	$stateProvider.state(softSkillsTrainingState);
 	$stateProvider.state(supportState);
+
+	$stateProvider.state('careers', {
+		abstract: false,
+		url: '/careers',
+		templateUrl: './views/careers.html'
+	})
+
+	$stateProvider.state('careers.careerInfo', {
+		url: '/:hash',
+		templateUrl:'./views/career.html',
+		controller: 'scrollCtrl'	})
 
 	$stateProvider.state('train',{
 		abstract: true,
