@@ -91,6 +91,20 @@ display: block;
   min-height: 500px;
 }
 
+.marginLeft {
+  margin-left: 40px;
+}
+
+.sideInstructor {
+  border-radius: 20px;
+    text-align: center;
+}
+
+.wholeHalf {
+  width: 100%;
+  padding: 100px 0px !important;
+}
+
 /* about circle diagram div */
 
 .whyCircle{
