@@ -97,7 +97,8 @@ display: block;
 
 .sideInstructor {
   border-radius: 20px;
-    text-align: center;
+        padding: 16px;
+
 }
 
 .wholeHalf {
@@ -290,7 +291,7 @@ top: 25px;
 }
 
 .white{
-  color: white;
+  color: white !important;
 }
 
 @media (max-width: 991px) {

@@ -255,7 +255,8 @@ var supportState = {
 	$stateProvider.state('careers.careerInfo', {
 		url: '/:hash',
 		templateUrl:'./views/career.html',
-		controller: 'scrollCtrl'	})
+		controller: 'scrollCtrl'
+	})
 
 	$stateProvider.state('train',{
 		abstract: true,
