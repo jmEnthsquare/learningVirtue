@@ -30,11 +30,12 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 		templateUrl:'./views/hof.html'
 	}
 
-	var aboutState = {
-		name: 'about',
-		url: '/about',
-		templateUrl: '/views/about.html'
-	}
+	// var aboutState = {
+	// 	name: 'about',
+	// 	url: '/about',
+	// 	templateUrl: '/views/about.html',
+	// 	controller: 'scrollCtrl'
+	// }
 
 	var careerGoalsState = {
 		name: 'career',
@@ -218,7 +219,7 @@ var supportState = {
 	$stateProvider.state(page404State);
 	$stateProvider.state(staffState);
 	$stateProvider.state(hofState);
-	$stateProvider.state(aboutState);
+	// $stateProvider.state(aboutState);
 	//$stateProvider.state(careerState);
 	$stateProvider.state(careerGoalsState);
 	$stateProvider.state(loginState);
@@ -240,6 +241,7 @@ var supportState = {
 	$stateProvider.state(whyNetworkState);
 	$stateProvider.state(whyDevelopState);
 	$stateProvider.state(newsState);
+	$stateProvider.state(facilitationState);
 	$stateProvider.state(communicationTrainingState);
 	$stateProvider.state(accentTrainingState);
 	$stateProvider.state(englishTrainingState);
@@ -257,6 +259,19 @@ var supportState = {
 		templateUrl:'./views/career.html',
 		controller: 'scrollCtrl'
 	})
+
+		$stateProvider.state('about', {
+		abstract: false,
+		url: '/about',
+		templateUrl: './views/about.html'
+	})
+
+	$stateProvider.state('about.aboutInfo', {
+		url: '/:hash',
+		templateUrl:'./views/about.html'
+		//controller: 'scrollCtrl'
+	})
+
 
 	$stateProvider.state('train',{
 		abstract: true,

@@ -62,8 +62,13 @@ div.inline p > span{
 }
 
 .linkLight {
-  float: right;
+  float: none;
   font-weight: bold;
+  max-width: 110px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
   /*text-decoration: underline;
   cursor: pointer;*/
 }
@@ -581,6 +586,19 @@ table tr:last-child td {
   color: #ffffff;
   font-size: 84px;
 }
+
+.material-ico-domain,
+.material-ico-face,
+.material-ico-wb_sunny,
+.material-ico-school,
+.material-ico-vpn_key,
+.material-ico-work {
+  display: inline-block;
+  color: #70e578;
+  font-size: 84px;
+}
+
+
 .material-icons-school,
 .material-icons-vpn_key,
 .material-icons-work {
@@ -1189,8 +1207,35 @@ div.field-wrap input {
 }
 */
 
-/* Home Page Table */
+.backToTrain{
+  position: relative;
+    /*top: -100px;
+*/  left: 60px;
+  padding-top: 20px;
 
+  text-decoration: underline;
+}
+
+/* Active Pulsce Circle */
+.inlineRing {
+    border: 3px solid rgba(255, 255, 255, 0.5); 
+    -webkit-border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left:0;
+    top:0;
+    -webkit-animation: pulsate 1.5s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+    opacity: 0.0
+}
+@-webkit-keyframes pulsate {
+    0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+    50% {opacity: 1.0;}
+    100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
+}
+
+/* Home Page TABLE */
 .greenDiv {
   background-color: #55dc69;
   color: black;
@@ -1208,6 +1253,18 @@ table.homeTable, .homeTable p {
 table.homeTable th {
   background-color: #2f2f2f;
   color: #70e578;
+  width: 50%;
+}
+
+.spanWrap {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.spanWrap p {
+ /* margin-right: 130px;
+*/  float: left;
 }
 
 .stretch {

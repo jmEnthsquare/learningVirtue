@@ -23,14 +23,14 @@ virtue.controller('formCtrl', ['$scope', function($scope){
 }]);
 
 virtue.controller('tabCtrl', ['$scope', '$stateParams', function($scope, $stateParams){
-
+  $scope.course = 'IT';
 	$scope.tab   = 'html5';
   $scope.level = 'entry';
-	// $scope.slab = 'ccna';
+	//$scope.slab = 'ccna';
 	var mod = $stateParams.mod;
 	if (!mod) {
 		$scope.slab = "ccna";
-		// $scope.tab = 'html5';
+  //$scope.tab = 'html5';
 	}
 	else{
 		$scope.slab = mod;

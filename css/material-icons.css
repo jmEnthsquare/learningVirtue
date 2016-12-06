@@ -989,6 +989,10 @@
 .material-icons-face:before {
     content: "\e87c"
 }
+.material-ico-face:before {
+    content: "\e87c"
+}
+
 
 .material-icons-fast_forward:before {
     content: "\e01f"
@@ -2470,6 +2474,11 @@
     content: "\e80c"
 }
 
+.material-ico-school:before {
+    content: "\e80c"
+}
+
+
 .material-icons-screen_lock_landscape:before {
     content: "\e1be"
 }
@@ -3149,6 +3158,11 @@
 .material-icons-wb_sunny:before {
     content: "\e430"
 }
+
+.material-ico-wb_sunny:before {
+    content: "\e430"
+}
+
 
 .material-icons-wc:before {
     content: "\e63d"

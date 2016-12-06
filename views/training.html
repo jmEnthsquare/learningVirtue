@@ -1,4 +1,4 @@
-<main class="tophat">
+<main class="tophat" ng-controller="tabCtrl" ng-switch="course">
 <!-- 	<section class="well2 bg-primary">
             <div class="container">
                 <h2>Fast Track Training</h2>
@@ -32,169 +32,34 @@
         </section> -->
 
         <section class="well2top bg-primary">
-            <div class="container">
-                <div class="row offs3">
-                    <div class="col-md-6">
-                        <div class="it-training">
-                            <h1>IT Training</h1>
-                            <p>Click here for our IT training</p>
+            <div class="container bottomSpace">
+                <div class="row offs3" >
+                    <div class="col-md-6 signupdiv"> 
+                    <a href="" ng-click="course='IT'">
+                        <div class="whyCircle">
+                        <div ng-class="{'inlineRing': course == 'IT'}"></div>
+                            <div class="whyCircleText">
+                                <h3>IT Training</h3>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="non-it-training">
-                            <h1>Non-IT Training</h1>
+                    </a>
                         </div>
-                    </div>
+                    <div class="col-md-6 signupdiv"> <a href="" ng-click="course='nonIT'">
+                        <div class="whyCircle">
+                        <div ng-class="{'inlineRing': course == 'nonIT'}"></div>
+                            <div class="whyCircleText">
+                                <h3>Non-Technical <br> Trainings</h3>
+                            </div>
+                        </div>
+                    </a>
+                        </div>
+
                 </div>
             </div>
         </section>
                
-<!--                 <section class="well6 bg-primary">
-            <div class="container center767">
-                <h1>Career Paths</h1>
 
-                <div class="row offs3">
-                    <div class="col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.6s">
-                        <article class="block-icon block-icon__mod white">
-                            <span class="material-icons-school"></span>
-
-                            <div class="block_caption">
-                                <h3> What is Linux Administation? </h3>
-
-                                <p> Whether you know it or not you are already using Linux every day. Every time you use Google or Facebook or any other major Internet site, you are communicating with servers running Linux. </p>
-
-                                <a ui-sref="why-linux" class="btn btn-default">Read More</a>
-
-                            </div>
-                        </article>
-                    </div>
-
-                    <div class="col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.4s">
-                        <article class="block-icon block-icon__mod white">
-                            <span class="material-icons-vpn_key "></span>
-
-                            <div class="block_caption">
-                                <h3>What is Web Development? </h3>
-
-                                <p>Code is weightless. You don't need a physical product to earn a profit. Your website can run on autopilot. If you're running an ecommerce store it's open 24 hours a day 365 days a year.</p>
-
-                                <a ui-sref="why-develop" class="btn btn-default">Read More</a>
-
-                            </div>
-                        </article>
-                    </div>
-
-                    <div class="col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
-                        <article class="block-icon block-icon__mod white">
-                            <!-- <span class="material-icons-work "></span> -->
-
-                      <!--       <div class="block_caption">
-                                <h3>What is Networking? </h3>
-
-                                <p> Cisco pioneered routing and switching technologies — and
-continues to lead the way, with the greatest market share
-and largest installed base in the industry. </p>
-
-                                <a ui-sref="why-network" class="btn btn-default">Read More</a>
-
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-            
-<!--<section class="well2top">
-        <div class="container">
-
-
-        
-            <div class="container careerGoals">
-
-            <div class="accordion_cnt">
-                        <table>
-                            <tr>
-                                <th>I'm interested in......</th>
-                                <th>I'm NOT sure of my career goals</th>
-                            </tr>
-
-                            <tr>
-                                <td><a ui-sref="linux">Linux Administration</a></td>
-                                <td>I would like to be a Software Engineer <a href=""> ></a>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td><a ui-sref="ui-ux">UI/UX Development</a></td>
-                                <td>I would like to be a UI/UX Developer <a href=""> ></a></td>
-                            </tr>
-
-                            <tr>
-                                <td><a ui-sref="java">Software Engineering</a></td>
-                                <td>I would like to be a Software Engineer <a href=""> ></a>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td><a ui-sref="web-developer">Web Development</a>
-                                </td>
-                                <td>I would like to be a Web Developer <a href=""> ></a>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td><a ui-sref="cisco">Network Engineering</a></td>
-                                <td>I would like to be a Network Engineer <a href=""> ></a>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td><a ui-sref="dba">DataBase Administration</a></td>
-                                <td>I would like to be a DBA <a href=""> ></a>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td><a ui-sref="cisco">CISCO Certification (CCNP, CCIE)</a></td>
-                                <td>I would like to earn my CISCO Certification(s) <a href=""> ></a>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td><a ui-sref="workshops">Voice & Accent Training</a></td>
-                                <td>I would like to fine tune my accent and vocals <a href=""> ></a>
-                                </td>
-                            </tr>
-
-
-                            <tr>
-                                <td><a ui-sref="workshops">Soft Skills Training</a></td>
-                                <td>I would like to be a Soft Skills Professional Trainer<a href=""> ></a>
-                                </td>
-                            </tr>
-
-
-                            <tr>
-                                <td><a ui-sref="workshops">Certified Communication Skills </a></td>
-                                <td>I would like to be a Certified Communication Professional<a href=""> ></a>
-                                </td>
-                            </tr>
-
-
-                            <tr>
-                                <td><a ui-sref="workshops">Certified Soft Skills Professional</a></td>
-                                <td>I would like to be a Certified Soft Skills Professional<a href=""> ></a>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                                    
-                    
-            </div>
-</div>
-        </section> -->
-
-        <section class="well2">
+        <section class="well2" ng-switch-when="IT">
             <div class="container">
                 <h2>Current Modules available</h2>
                 <article>
@@ -348,6 +213,14 @@ and largest installed base in the industry. </p>
                         January 25th through March 17th. Register up to the night a class begins (space permitting). Registration continues through the end of the session.  </p>
                 </article> -->
 
+            </div>
+        </section>
+
+
+
+        <section class="well2" ng-switch-when="nonIT">
+            <div class="container"> <h2>Current Non-IT Courses avilable</h2>
+                <div class="row"></div>
             </div>
         </section>
 </main>
