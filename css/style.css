@@ -13,9 +13,19 @@
 }
 .inline p{
   display: inline-block; 
-  margin: 50px 100px;
-    
+  margin: 50px 200px; 
 }
+
+.inline p.central{
+  display: inline-block; 
+  margin: 50px 100px; 
+}
+
+
+.inline {
+margin: 0 auto;
+}
+
 .middleSection{
   width: 100%;
 }
@@ -62,16 +72,30 @@ div.inline p > span{
 }
 
 .linkLight {
-  float: none;
+  float: right;
   font-weight: bold;
   max-width: 110px;
   margin-left: auto;
   margin-right: auto;
   display: block;
-
-  /*text-decoration: underline;
-  cursor: pointer;*/
 }
+
+@media screen and (max-width: 990px) {
+  .linkLight{
+    float: none;
+  }
+
+  table.homeTable {
+    padding-top: 1%;
+  }
+
+  .smallSpace {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
+  
+}
+
 
 .jumboCta {
 background: rgba(255,255,255,0.6);
@@ -1209,11 +1233,13 @@ div.field-wrap input {
 
 .backToTrain{
   position: relative;
-    /*top: -100px;
-*/  left: 60px;
-  padding-top: 20px;
-
+  cursor: pointer;
   text-decoration: underline;
+  text-align: center;
+  font-weight: bold;
+}
+.backToTrain:hover {
+  color: #70e578;
 }
 
 /* Active Pulsce Circle */
@@ -1253,13 +1279,14 @@ table.homeTable, .homeTable p {
 table.homeTable th {
   background-color: #2f2f2f;
   color: #70e578;
-  width: 50%;
+  text-align: center;
 }
 
 .spanWrap {
   width: 100%;
   padding: 0;
   margin: 0;
+  text-align: left;
 }
 
 .spanWrap p {

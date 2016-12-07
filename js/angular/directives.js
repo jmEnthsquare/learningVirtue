@@ -77,7 +77,7 @@ virtue.directive('ngBubbleSlider', function() {
   };
 });
 
-virtue.directive('lastKnown', function(){
+virtue.directive('lastone', function(){
   // Runs during compile
   return {
     // name: '',
@@ -92,8 +92,10 @@ virtue.directive('lastKnown', function(){
     // replace: true,
     // transclude: true,
     // compile: function(tElement, tAttrs, function transclude(function(scope, cloneLinkingFn){ return function linking(scope, elm, attrs){}})),
-    link: function($scope, iElm, iAttrs, controller) {
-      $window.history.back();
+    link: function($scope, iElm, iAttrs, controller, $window) {
+      iElm.bind('click', function(){
+      window.history.back();
+    })
       
     }
   };

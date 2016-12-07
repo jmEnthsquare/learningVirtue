@@ -214,6 +214,24 @@ var supportState = {
 	// 	templateUrl: './views/careers.html'
 	// }
 
+	var TTTSoftSkillState = {
+		name: 'ttt-softskills',
+		url: '/ttt/soft-skills',
+		templateUrl: './views/TTT/ttt-soft-skills.html'
+	}
+
+	var TTTLeadershipState = {
+		name: 'ttt-leadership',
+		url: '/ttt/leadership',
+		templateUrl: './views/TTT/ttt-leadership.html'
+	}
+
+	var TTTAUXState = {
+		name: 'ttt-aux',
+		url: '/ttt/aux',
+		templateUrl: './views/TTT/ttt-aux.html'
+	}
+
 
 	$stateProvider.state(homeState);
 	$stateProvider.state(page404State);
@@ -247,6 +265,9 @@ var supportState = {
 	$stateProvider.state(englishTrainingState);
 	$stateProvider.state(softSkillsTrainingState);
 	$stateProvider.state(supportState);
+	$stateProvider.state(TTTSoftSkillState);
+	$stateProvider.state(TTTLeadershipState);
+	$stateProvider.state(TTTAUXState);
 
 	$stateProvider.state('careers', {
 		abstract: false,
