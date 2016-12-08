@@ -226,11 +226,23 @@ var supportState = {
 		templateUrl: './views/TTT/ttt-leadership.html'
 	}
 
-	var TTTAUXState = {
-		name: 'ttt-aux',
-		url: '/ttt/aux',
-		templateUrl: './views/TTT/ttt-aux.html'
+	var TTTVoiceAccentState = {
+		name: 'ttt-voice',
+		url: '/ttt/voice-accent',
+		templateUrl: './views/TTT/ttt-voice-accent.html'
 	}
+
+	var TTTFacilitationState = {
+		name: 'ttt-facilitation',
+		url: '/ttt/facilitation',
+		templateUrl: './views/TTT/ttt-facilitation.html'
+	}
+
+	// var TTTAUXState = {
+	// 	name: 'ttt-aux',
+	// 	url: '/ttt/aux',
+	// 	templateUrl: './views/TTT/ttt-aux.html'
+	// }
 
 
 	$stateProvider.state(homeState);
@@ -267,7 +279,9 @@ var supportState = {
 	$stateProvider.state(supportState);
 	$stateProvider.state(TTTSoftSkillState);
 	$stateProvider.state(TTTLeadershipState);
-	$stateProvider.state(TTTAUXState);
+	$stateProvider.state(TTTFacilitationState);
+	$stateProvider.state(TTTVoiceAccentState);
+	//$stateProvider.state(TTTAUXState);
 
 	$stateProvider.state('careers', {
 		abstract: false,
@@ -278,6 +292,18 @@ var supportState = {
 	$stateProvider.state('careers.careerInfo', {
 		url: '/:hash',
 		templateUrl:'./views/career.html',
+		controller: 'scrollCtrl'
+	})
+
+		$stateProvider.state('ttt', {
+		abstract: false,
+		url: '/ttt/aux',
+		templateUrl: './views/TTT/ttt-aux.html'
+	})
+
+	$stateProvider.state('ttt.aux', {
+		url: '/:hash',
+		templateUrl:'./views/TTT/ttt-aux.html',
 		controller: 'scrollCtrl'
 	})
 
