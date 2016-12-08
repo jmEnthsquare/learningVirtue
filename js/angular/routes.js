@@ -238,11 +238,11 @@ var supportState = {
 		templateUrl: './views/TTT/ttt-facilitation.html'
 	}
 
-	// var TTTAUXState = {
-	// 	name: 'ttt-aux',
-	// 	url: '/ttt/aux',
-	// 	templateUrl: './views/TTT/ttt-aux.html'
-	// }
+	var TTTCommunicationState = {
+		name: 'ttt-communication',
+		url: '/ttt/communication',
+		templateUrl: './views/TTT/ttt-communication.html'
+	}
 
 
 	$stateProvider.state(homeState);
@@ -281,7 +281,7 @@ var supportState = {
 	$stateProvider.state(TTTLeadershipState);
 	$stateProvider.state(TTTFacilitationState);
 	$stateProvider.state(TTTVoiceAccentState);
-	//$stateProvider.state(TTTAUXState);
+	$stateProvider.state(TTTCommunicationState);
 
 	$stateProvider.state('careers', {
 		abstract: false,
