@@ -18,8 +18,9 @@
                         <div class="container bottomSpace">
                             <div class="row" ng-switch on="level">
                                 <div class="col-md-6 signupdiv">
-                               <a href="" ng-click="level='entry'">   
-                                <div class="whyCircle" ng-class="{'white': level == 'entry'}">
+                               <a href="" class="circleHover" ng-click="level='entry'">   
+                                <div class="whyCircle">
+                                <div ng-class="{'inlineRing': level == 'entry'}"></div>
                             <div class="whyCircleText">
                             <h3>Entry Level</h3>
 
@@ -48,7 +49,8 @@
 
                                 </div>
                                 <div class="col-md-6 signupdiv">
-                                <a href="" ng-click="level='senior'">    <div class="whyCircle" ng-class="{'white': level == 'senior'}">
+                                <a href="" class="circleHover"  ng-click="level='senior'">    <div class="whyCircle">
+                                <div ng-class="{'inlineRing': level == 'senior'}"></div>
                             <div class="whyCircleText">
                             <h3>Senior Level</h3>
 

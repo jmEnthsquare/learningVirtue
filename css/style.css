@@ -180,6 +180,14 @@ left: 700px;
 .whyCircleText p {
   margin: 0 auto;
 }
+
+.whyCircleText p:hover {
+  color: white;
+}
+
+a.circleHover:hover{
+  color: white;
+}
 .whyCircleText h3 {
   margin-top: 20px;
 }
