@@ -10,7 +10,7 @@
                     <div class="col-md-4 wow fadeIn" data-wow-duration="2s"     data-wow-delay="0.2s" ng-repeat="trainer in data"
                          ng-click="showDetail(trainer)"  >
                         <div class="thumbnail">
-                            <a href=""><img class="" src="images/page-2_img04.jpg" alt=""></a>
+                            <a href=""><img class="instructor-port" src="{{trainer.image}}" alt="" ></a>
                         </div>
 
                         <h3>
@@ -44,7 +44,7 @@
                     <div class="row bottomSpace">
                         <div class="col-md-5 col-sm-6 col-xs-12 mg-add">
                             <figure class="thumbnail">
-                                <a href="#"><img src="images/page-4_img01.jpg" alt=""/></a>
+                                <a href="#"><img src="{{trainerDetail.image}}" class="instructor-blurb" alt=""/></a>
                             </figure>
                         </div>
                         <div class="col-md-7 col-sm-6 col-xs-12">

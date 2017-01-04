@@ -197,7 +197,7 @@ a.circleHover:hover{
 }
 
 .advertisement{
-  background: url('../images/advert.jpg') no-repeat;
+  background: url('../images/discount.jpg') no-repeat;
   background-size: 100% 100%;
   width: 100%;
   /*filter: blur(5px);
@@ -1072,6 +1072,18 @@ div.goalButtons button{
 }
 
 /* ================ Bubble-Up ================ */
+
+/*  Instructor CSS  */
+
+img.instructor-port {
+height: 270px;
+width: 260px;
+}
+
+img.instructor-blurb {
+height: 300px;
+width: 400px;
+}
 
 .ball {
   display: inline-block;
