@@ -349,16 +349,18 @@ sessions high priority as we believe in practicing.</p>
                     <div class="media">
   <div class="media-left media-middle">
     <a target="_blank" href="{{feed.link}}">
-      <img class="media-object thumbnail" src="{{feed.mediaGroups[0].contents[0].thumbnails[0].url}}" height="126px" width="170px" alt="...">
+      <img class="media-object thumbnail" src="{{feed.content[0].url}}" height="126px" width="170px" alt="...">
     </a>
   </div>
   <div class="media-body">
-  <h3 class="media-heading">{{feed.author}}</h3>
+  <h3 class="media-heading">{{feed.creator}}</h3>
 
   <div class="hblock">
-                    <p>Author</p>
-                    </div><br>
-        <p>{{feed.contentSnippet}}</p>  </div><div class="timestampLatest"><time class="h3" datetime="2015-01-01">{{feed.publishedDate}}  </time></div>
+                    <p ng-if="feed.category[0]">{{feed.category[0].content}}, {{feed.category[1].content}}, {{feed.category[2].content}}, {{feed.category[3].content}}</p>
+                    </div><br> <br>
+        <!-- <p ng-bind-html="feed.description"></p>  -->
+        <br> </div>
+        <div class="timestampLatest"><time class="h3" datetime="2015-01-01">{{feed.pubDate}}  </time></div>
 </div> <a ui-sref="news" class="btn btn-primary">Read More</a>
  </div>
 <div class="md-col-9"><hr></div>

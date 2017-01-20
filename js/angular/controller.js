@@ -1,7 +1,14 @@
 'use strict';
 
 var virtue = angular.module('virtue');
-var feedUrl = 'http://www.networkworld.com/category/education/index.rss';
+var feedUrl ='https://www.theguardian.com/technology/rss';
+
+//'http://feeds.feedburner.com/TechCrunch/';
+//'http://feeds.feedburner.com/gadgets360-latest?format=xml';
+// 'http://zeenews.india.com/rss/technology-news.xml';
+//'http://feeds.reuters.com/reuters/INtechnologyNews?format=xml';
+// 'http://feeds.bbci.co.uk/news/technology/rss.xml?edition=uk';
+//'http://www.networkworld.com/category/education/index.rss';
 
 
 virtue.controller('formCtrl', ['$scope', function($scope){
@@ -278,7 +285,7 @@ virtue.controller('scrollCtrl', function($document, $scope, $location, $anchorSc
 }).value('duScrollOffset', 200);
 
 
-virtue.controller('rssCtrl', ['$scope' , 'FeedService', '$window', function($scope, Feed, $window){
+virtue.controller('rssCtrl', ['$scope' , 'FeedService', '$window','$sce', function($scope, Feed, $window, $sce){
       
       $scope.numberOfPostsPerPage = 5;
       $scope.totalPosts = null;
@@ -304,9 +311,11 @@ virtue.controller('rssCtrl', ['$scope' , 'FeedService', '$window', function($sco
 
 
     function getPosts(){
+      //console.log("called get posts")
       return Feed.parseFeed().then(function(res){
-        $scope.feeds = res.data.responseData.feed.entries;
-        console.log($scope.feeds);
+        console.log(res);
+        $scope.feeds = res.data.query.results.rss.channel.item;
+       console.log($scope.feeds);
 
           return $scope.totalPosts = $scope.feeds.length;
          
