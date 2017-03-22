@@ -30,13 +30,6 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 		templateUrl:'./views/hof.html'
 	}
 
-	// var aboutState = {
-	// 	name: 'about',
-	// 	url: '/about',
-	// 	templateUrl: '/views/about.html',
-	// 	controller: 'scrollCtrl'
-	// }
-
 	var careerGoalsState = {
 		name: 'career',
 		url: '/career',
@@ -189,30 +182,23 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 		templateUrl: './views/why/why-networking.html'
 	}
 
+	var whyDevelopState = {
+			name: 'why-develop',
+			url: '/why-develop',
+			templateUrl: './views/why/why-development.html'
+		}
 
-var whyDevelopState = {
-		name: 'why-develop',
-		url: '/why-develop',
-		templateUrl: './views/why/why-development.html'
+	var newsState = {
+			name: 'news',
+			url: '/news',
+			templateUrl: './views/news.html'
+		}
+
+	var supportState = {
+		name: 'support',
+		url: '/support',
+		templateUrl: './views/support.html'
 	}
-
-var newsState = {
-		name: 'news',
-		url: '/news',
-		templateUrl: './views/news.html'
-	}
-
-var supportState = {
-	name: 'support',
-	url: '/support',
-	templateUrl: './views/support.html'
-}
-
-	// var careerState = {
-	// 	name: 'careers',
-	// 	url: '/careers',
-	// 	templateUrl: './views/careers.html'
-	// }
 
 	var TTTSoftSkillState = {
 		name: 'ttt-softskills',
@@ -255,8 +241,6 @@ var supportState = {
 	$stateProvider.state(page404State);
 	$stateProvider.state(staffState);
 	$stateProvider.state(hofState);
-	// $stateProvider.state(aboutState);
-	//$stateProvider.state(careerState);
 	$stateProvider.state(careerGoalsState);
 	$stateProvider.state(loginState);
 	$stateProvider.state(contactState);
@@ -338,6 +322,20 @@ var supportState = {
 		templateUrl: './views/calendar.html',
 		controller: 'calendarCtrl'
 	})
+
+	$stateProvider.state('security',{
+		abstract: false,
+		url: '/security',
+		templateUrl: './views/ciscoSecurity/ccie.html'
+	})
+
+		$stateProvider.state('collaboration',{
+		abstract: false,
+		url: '/collaboration',
+		templateUrl: './views/collab/ccna.html'
+	})
+
+
 
 }]);
 
