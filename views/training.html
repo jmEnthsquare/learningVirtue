@@ -1,0 +1,384 @@
+<main class="tophat" ng-controller="tabCtrl" ng-switch="course">
+<!-- 	<section class="well2 bg-primary">
+            <div class="container">
+                <h2>Fast Track Training</h2>
+
+                <div class="row offs">
+                    <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
+                        <a fancybox class="thumb thumb__mod fancybox.iframe"
+                           href="//player.vimeo.com/video/37582125?wmode=transparent">
+                            <img src="images/page-3_img15.jpg" alt=""/>
+                            <span class="thumb_overlay"><span class="material-icons-play_circle_outline"></span></span>
+                        </a>
+
+                        <h3>Student & Family Handbook</h3>
+
+                        <p>Local author, Susan Beattie, visited Elementary School today with Luke, her rescue dog. She shared her book, Luke’s Story, explained to the students... </p>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.4s">
+                        <a fancybox class="thumb thumb__mod fancybox.iframe"
+                           href="//player.vimeo.com/video/37582125?wmode=transparent">
+                            <img src="images/page-3_img16.jpg" alt=""/>
+                            <span class="thumb_overlay"><span class="material-icons-play_circle_outline"></span></span>
+                        </a>
+
+                        <h3>Pic of the Day</h3>
+
+                        <p>The largest group of students in school history has qualified for the DECA state competition in March. Eleven of Mrs. Melissa Basinger’s students...</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="well2top bg-primary">
+            <div class="container bottomSpace">
+                <div class="row offs3" >
+                    <div class="col-md-6 signupdiv"> 
+                    <a href="" ng-click="course='IT'">
+                        <div class="whyCircle">
+                        <div ng-class="{'inlineRing': course == 'IT'}"></div>
+                            <div class="whyCircleText">
+                                <h3>IT Training Modules</h3>
+                            </div>
+                        </div>
+                    </a>
+                        </div>
+                    <div class="col-md-6 signupdiv"> <a href="" ng-click="course='nonIT'">
+                        <div class="whyCircle">
+                        <div ng-class="{'inlineRing': course == 'nonIT'}"></div>
+                            <div class="whyCircleText">
+                                <h3>Non-Technical <br> Training Courses</h3>
+                            </div>
+                        </div>
+                    </a>
+                        </div>
+
+                </div>
+            </div>
+        </section>
+               
+
+        <section class="well2" ng-switch-when="IT">
+            <div class="container">
+                <h2>Current Modules available</h2>
+                <article>
+                    <div class="article_header">
+                        <time class="h3" datetime="2015-01-01">20 days</time>
+                        <h3>Linux</h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-5 col-sm-6 col-xs-12 mg-add">
+                            <figure class="thumbnail">
+                                <a href="#"><img src="images/page-4_img01.jpg" alt=""/></a>
+                            </figure>
+                        </div>
+                        <div class="col-md-7 col-sm-6 col-xs-12">
+                            <p>95% of the industry is working on Linux platform. In your daily life, you are communicating with Linux servers, major internet sites such as Facebook, Flipkart, Naukri, Google and many more portal or deployed on Linux servers. In addition, most modern televisions and Android mobiles run on Linux and industry is looking for skilled resources to maintain the Linux servers. </p>
+                        </div><a ui-sref="linux" class="btn btn-primary">Course Breakdown</a> <a ui-sref="why-linux" class="btn btn-primary marginLeft">What is Linux?</a>
+                    </div>
+                </article>
+
+                <div class="container">
+                    <hr/>
+                </div>
+
+                <article>
+                    <div class="article_header">
+                        <time class="h3" datetime="2015-01-01">60 days</time>
+                        <h3>Cisco - CCNA</h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-5 col-sm-6 col-xs-12 mg-add">
+                            <figure class="thumbnail">
+                                <a href="#"><img src="images/page-4_img01.jpg" alt=""/></a>
+                            </figure>
+                        </div>
+                        <div class="col-md-7 col-sm-6 col-xs-12">
+                            <p>Intro to our CISCO Networking course - in this module: IPv6 Routing, DHCP, WAN </p>
+                        </div><a ui-sref="cisco({mod: 'ccna'})" class="btn btn-primary">Course Breakdown</a> <a ui-sref="why-network" class="btn btn-primary marginLeft">What is Cisco?</a>
+                    </div>
+                </article>
+
+                <div class="container">
+                    <hr/>
+                </div>
+
+                <article>
+                    <div class="article_header">
+                        <time class="h3" datetime="2015-01-01">60 days</time>
+                        <h3>Cisco - CCNP</h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-5 col-sm-6 col-xs-12 mg-add">
+                            <figure class="thumbnail">
+                                <a href="#"><img src="images/page-4_img01.jpg" alt=""/></a>
+                            </figure>
+                        </div>
+                        <div class="col-md-7 col-sm-6 col-xs-12">
+                            <p>Intro to our CISCO Networking course - we currently offer 3 modules: CCNA, CCNP, and CCIE; Coveringing real life study cases, industry level configuration and Firewall/security basics.</p>
+                        </div><a ui-sref="cisco({mod: 'ccnp'})" class="btn btn-primary" >Course Breakdown</a> <a ui-sref="why-network" class="btn btn-primary marginLeft">What is Cisco?</a>
+                    </div>
+                </article>
+
+
+                <div class="container">
+                    <hr/>
+                </div>
+
+
+
+                <article>
+                    <div class="article_header">
+                        <time class="h3" datetime="2015-01-01">60 days</time>
+                        <h3>Cisco - CCIE</h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-5 col-sm-6 col-xs-12 mg-add">
+                            <figure class="thumbnail">
+                                <a href="#"><img src="images/page-4_img01.jpg" alt=""/></a>
+                            </figure>
+                        </div>
+                        <div class="col-md-7 col-sm-6 col-xs-12">
+                            <p>Intro to our CISCO Networking course - we currently offer 3 modules: CCNA, CCNP, and CCIE; Coveringing real life study cases, industry level configuration and Firewall/security basics.</p>
+                        </div><a ui-sref="cisco({mod: 'ccie'})"" class="btn btn-primary">Course Breakdown</a> <a ui-sref="why-network" class="btn btn-primary marginLeft">What is Cisco?</a>
+                    </div>
+                </article>
+
+                <div class="container">
+                    <hr/>
+                </div>
+
+
+                <article>
+                    <div class="article_header">
+                        <time class="h3" datetime="2015-01-01">45 days</time>
+                        <h3>Web Development</h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-5 col-sm-6 col-xs-12 mg-add">
+                            <figure class="thumbnail">
+                                <a href="#"><img src="images/page-4_img01.jpg" alt=""/></a>
+                            </figure>
+                        </div>
+                        <div class="col-md-7 col-sm-6 col-xs-12">
+                            <p>The purpose of this training is to explore on latest open source technologies. This training involves development of web pages, performing validation as per the user requirement, working with the open source database and work on the look and feel of the web pages.</p>
+                        </div><a ui-sref="web-developer" class="btn btn-primary">Course Breakdown</a> <a ui-sref="why-develop" class="btn btn-primary marginLeft">What is Web Development?</a>
+                    </div>
+                </article>
+
+
+
+
+<!--                 <article>
+                    <div class="article_header">
+                        <time class="h3" datetime="2015-01-01">12/09</time>
+                        <h3>Congratulations to our P.R.I.D.E. Winners</h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-5 col-sm-6 col-xs-12 mg-add">
+                            <figure class="thumbnail">
+                                <a href="#"><img src="images/page-4_img01.jpg" alt=""/></a>
+                            </figure>
+                        </div>
+                        <div class="col-md-7 col-sm-6 col-xs-12">
+                            <p>Congratulations to Teresa Budd from Page Middle School and Mariah Yazzie from Manson Mesa High School, two of our November P.R.I.D.E. recipients! Along with Michele
+                                Calnimptewa from Desert View Intermediate, Ms. Budd received Personal Recognition In District Education (PRIDE) to share the outstanding efforts of our certified and classified staff. Each school also recognizes those students who are Positive, Respectful, Involved, Determined, and Excellent (PRIDE) in the way they act and go about the business of learning. Congratulations to Keegan Dodson, Bronson Hicks, Sheldon Manymules, and Rachel Stice for demonstrating PRIDE in their education.</p>
+                        </div><a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </article>
+ -->
+
+
+                <div class="container">
+                    <hr/>
+                </div>
+
+
+                <!-- <article>
+                    <div class="article_header">
+                        <time class="h3" datetime="2015-01-01">17/09</time>
+                        <h3>Beat the Winter Blues with Community Education - Now Enrolling
+                        </h3>
+                    </div>
+
+                    <p>Community Education, the School District's lifelong learning program, is currently taking enrollment for our popular winter session of classes.
+                        Our class catalog can be found inserted into the Sunday, January 3, 2016 Idaho Statesman (subscribers only), mailed to local residents (by January 8, 2016), in Boise Public Library branches, online at www.boiselearns.org, or click on the course catalog image below. Click here to review a PDF of the catalog. Winter session runs
+                        January 25th through March 17th. Register up to the night a class begins (space permitting). Registration continues through the end of the session.  </p>
+                </article> -->
+
+            </div>
+        </section>
+
+
+
+        <section class="well2" ng-switch-when="nonIT">
+            <div class="container"> <h2>Current Non-IT Courses avilable</h2>
+
+
+
+                                                       <article>
+                    <div class="article_header">
+                        <time class="h3" datetime="2015-01-01">10 days</time>
+                        <h3>College to Corporate</h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-5 col-sm-6 col-xs-12 mg-add">
+                            <figure class="thumbnail">
+                                <a href="#"><img src="images/page-4_img01.jpg" alt=""/></a>
+                            </figure>
+                        </div>
+                        <div class="col-md-7 col-sm-6 col-xs-12">
+                            <p>This program is to prepare the Fresh graduates to step to the next stages, i.e. Group Discussion (GD) and Interview, classes are conducted in Communication Skills which include basic communication skills, GD and Interview basics, mock GDs, mock Interviews (HR & Technical) and Psychometric tests.</p>
+                        </div><a ui-sref="college-corporate" class="btn btn-primary">Course Breakdown</a> <!-- <a ui-sref="why-linux" class="btn btn-primary marginLeft">What is Linux?</a> -->
+                    </div>
+                </article>
+
+                <div class="container">
+                    <hr/>
+                </div>
+
+                
+
+
+                               <article>
+                    <div class="article_header">
+                        <time class="h3" datetime="2015-01-01">3 days</time>
+                        <h3>TTT Communication Trainer</h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-5 col-sm-6 col-xs-12 mg-add">
+                            <figure class="thumbnail">
+                                <a href="#"><img src="images/page-4_img01.jpg" alt=""/></a>
+                            </figure>
+                        </div>
+                        <div class="col-md-7 col-sm-6 col-xs-12">
+                            <p>The course is practical, as participants experience new training techniques and then practise them. At the end of the course, participants deliver a short training session using their own materials, and receive detailed feedback.</p>
+<p>Our Train the Trainer Program helps both experienced and novice trainers polish the skills they need to facilitate Training® that’s participative, fun, and has a lasting impact. </p>
+                        </div><a ui-sref="ttt-communication" class="btn btn-primary">Course Breakdown</a> <!-- <a ui-sref="why-linux" class="btn btn-primary marginLeft">What is Linux?</a> -->
+                    </div>
+                </article>
+
+                <div class="container">
+                    <hr/>
+                </div>
+
+                                               <article>
+                    <div class="article_header">
+                        <time class="h3" datetime="2015-01-01">7 days</time>
+                        <h3>TTT Voice & Accent Training</h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-5 col-sm-6 col-xs-12 mg-add">
+                            <figure class="thumbnail">
+                                <a href="#"><img src="images/page-4_img01.jpg" alt=""/></a>
+                            </figure>
+                        </div>
+                        <div class="col-md-7 col-sm-6 col-xs-12">
+                            <p>A voice and accent trainer polishes the already present linguistic skills in an employee.
+This 'train the trainer' programme primarily covers overall grooming, successful classroom training styles, different training methodologies, content knowledge, and facilitation skills.</p>
+<p>So, if you have the gift of the gab and love interacting with people, Voice & Accent Training can be a rewarding career option for you.</p>
+                        </div><a ui-sref="ttt-voice" class="btn btn-primary">Course Breakdown</a> <!-- <a ui-sref="why-linux" class="btn btn-primary marginLeft">What is Linux?</a> -->
+                    </div>
+                </article>
+
+                <div class="container">
+                    <hr/>
+                </div>
+
+
+                                               <article>
+                    <div class="article_header">
+                        <time class="h3" datetime="2015-01-01">3 days</time>
+                        <h3>TTT Leadership Training</h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-5 col-sm-6 col-xs-12 mg-add">
+                            <figure class="thumbnail">
+                                <a href="#"><img src="images/page-4_img01.jpg" alt=""/></a>
+                            </figure>
+                        </div>
+                        <div class="col-md-7 col-sm-6 col-xs-12">
+                            <p>Employees are not told what to do anymore. Now, you need to engage your team and assist them in reaching their goals. You do not direct; you win the team over to your point of view. You do not dictate; you inspire and empower!</p> 
+                            <p> This corporate training program will teach you how to stop managing and start leading; and, as a result, make you a vital part to your organization's future. Investing in leadership training will help build your team's management fundamentals, which will ensure you are more than likely to have a bright career path ahead of you.
+</p>
+                        </div><a ui-sref="ttt-leadership" class="btn btn-primary">Course Breakdown</a> <!-- <a ui-sref="why-linux" class="btn btn-primary marginLeft">What is Linux?</a> -->
+                    </div>
+                </article>
+
+                <div class="container">
+                    <hr/>
+                </div>
+
+
+
+
+
+                                                               <article>
+                    <div class="article_header">
+                        <time class="h3" datetime="2015-01-01">3 days</time>
+                        <h3>TTT Facilitation Training</h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-5 col-sm-6 col-xs-12 mg-add">
+                            <figure class="thumbnail">
+                                <a href="#"><img src="images/page-4_img01.jpg" alt=""/></a>
+                            </figure>
+                        </div>
+                        <div class="col-md-7 col-sm-6 col-xs-12">
+                            <p>Facilitation skills is imperative to make a trainer and his/her training effective. We have got together different methodologies that when put together, create a thorough professional. </p>
+                        </div><a ui-sref="ttt-facilitation" class="btn btn-primary">Course Breakdown</a> <!-- <a ui-sref="why-linux" class="btn btn-primary marginLeft">What is Linux?</a> -->
+                    </div>
+                </article>
+
+                <div class="container">
+                    <hr/>
+                </div>
+
+                 <article>
+                    <div class="article_header">
+                        <time class="h3" datetime="2015-01-01">7 days</time>
+                        <h3>Communication Training + Interview Facing Skills
+</h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-5 col-sm-6 col-xs-12 mg-add">
+                            <figure class="thumbnail">
+                                <a href="#"><img src="images/page-4_img01.jpg" alt=""/></a>
+                            </figure>
+                        </div>
+                        <div class="col-md-7 col-sm-6 col-xs-12">
+                            <p>Communication is the foundation stone for any message to be conveyed. If you are looking for a job and have issues cracking interviews due to lack of communication skills, this is the place to be and this is the module to take. </p>
+                        </div><a ui-sref="ttt-interview" class="btn btn-primary">Course Breakdown</a> <!-- <a ui-sref="why-linux" class="btn btn-primary marginLeft">What is Linux?</a> -->
+                    </div>
+                </article>
+
+                <div class="container">
+                    <hr/>
+                </div>
+
+
+
+
+
+
+
+
+                           </div>
+
+
+                           </div>
+        </section>
+</main>

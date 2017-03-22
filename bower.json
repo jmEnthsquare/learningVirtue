@@ -1,0 +1,25 @@
+{
+  "name": "learningvirtue",
+  "description": "Learning Virtue website for enthsquare",
+  "main": "haha.js",
+  "authors": [
+    "Jerome Moore"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "Learning",
+    "Virtue"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ngSanitize": "^0.0.2"
+  }
+}

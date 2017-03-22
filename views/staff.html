@@ -1,0 +1,56 @@
+    <main class="tophat" ng-controller="scrollCtrl">
+
+        <section class="well2 bg-primary">
+            <div class="container center767">
+                <h2>
+                    Meet our staff
+                </h2>
+
+                <div class="row offs">
+                    <div class="col-md-4 wow fadeIn" data-wow-duration="2s"     data-wow-delay="0.2s" ng-repeat="trainer in data"
+                         ng-click="showDetail(trainer)"  >
+                        <div class="thumbnail">
+                            <a href=""><img class="instructor-port" src="{{trainer.image}}" alt="" ></a>
+                        </div>
+
+                        <h3>
+                            <a href="">{{trainer.name}}</a>
+                        </h3>
+
+                        <p>
+                            {{trainer.specialty}}
+                        </p>
+                    </div>
+
+                    
+                    </div>
+
+                    <div class="row">
+                    
+
+
+
+
+                </div>
+            </div>
+        </section> <br><br>
+        <div class="container" id="trainerDesc">
+                        <article>
+                    <div class="article_header">
+                        <!-- <time class="h3" datetime="2015-01-01">12/09</time>
+ -->                        <h3>{{trainerDetail.name}}</h3>
+                    </div>
+
+                    <div class="row bottomSpace">
+                        <div class="col-md-5 col-sm-6 col-xs-12 mg-add">
+                            <figure class="thumbnail">
+                                <a href="#"><img src="{{trainerDetail.image}}" class="instructor-blurb" alt=""/></a>
+                            </figure>
+                        </div>
+                        <div class="col-md-7 col-sm-6 col-xs-12">
+                            <p>{{trainerDetail.description}}</p>
+                        </div>
+                    </div>
+                </article>
+                </div>                        
+    </main>
