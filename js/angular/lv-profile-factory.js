@@ -54,7 +54,9 @@ virtue.factory('FeedService', ['$http', function($http){
 	
 		// return $http.jsonp('http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=50&callback=JSON_CALLBACK&q=' + 
 		//return xmlToJSON.parseString(feedUrl);
+
 		return $http.jsonp('https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20xml%20where%20url%20%3D%20\'' + encodeURIComponent(feedUrl) + '\'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys&callback=JSON_CALLBACK');
+
 		//$http.jsonp('//api.rss2json.com/v1/api.json?callback=JSON_CALLBACK&rss_url='+ feedUrl);
 		//return $http.jsonp('//ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=50&callback=JSON_CALLBACK&q=' + encodeURIComponent(feedUrl));
 
