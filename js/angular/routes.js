@@ -92,11 +92,17 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 		templateUrl: './views/courses/ui-ux.html'
 	}
 
+	// var ciscoCourseState = {
+	// 	name: 'cisco',
+	// 	url: '/courses/cisco/:mod',
+	// 	controller: 'tabCtrl',
+	// 	templateUrl: './views/courses/cisco.html'
+	// }
+
 	var ciscoCourseState = {
 		name: 'cisco',
-		url: '/courses/cisco/:mod',
-		controller: 'tabCtrl',
-		templateUrl: './views/courses/cisco.html'
+		url: '/courses/cisco',
+		templateUrl: './views/courses/ciscoland.html'
 	}
 
 	var webDeveloperState = {
@@ -236,6 +242,42 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 		templateUrl: './views/TTT/ttt-interview.html'
 	}
 
+	var securityCCNAState = {
+		name: 'securityccna',
+		url: '/security/ccna',
+		templateUrl: './views/ciscoSecurity/ccna.html'
+	}
+
+		var securityCCNPState = {
+		name: 'securityccnp',
+		url: '/security/ccnp',
+		templateUrl: './views/ciscoSecurity/ccnp.html'
+	}
+
+		var securityCCIEState = {
+		name: 'securityccie',
+		url: '/security/ccie',
+		templateUrl: './views/ciscoSecurity/ccie.html'
+	}
+
+	var collabCCNAState = {
+		name: 'collab-ccna',
+		url: '/collaboration/ccna',
+		templateUrl: './views/collab/ccna.html'
+	}
+
+	var collabCCNPState = {
+		name: 'collab-ccnp',
+		url: '/collaboration/ccnp',
+		templateUrl: './views/collab/ccnp.html'
+	}
+
+	var collabCCIEState = {
+		name: 'collab-ccie',
+		url: '/collaboration/ccie',
+		templateUrl: './views/collab/ccie.html'
+	}
+
 
 	$stateProvider.state(homeState);
 	$stateProvider.state(page404State);
@@ -273,6 +315,12 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 	$stateProvider.state(TTTVoiceAccentState);
 	$stateProvider.state(TTTCommunicationState);
 	$stateProvider.state(TTTInterviewState);
+	$stateProvider.state(securityCCNAState);
+	$stateProvider.state(securityCCNPState);
+	$stateProvider.state(securityCCIEState);
+	$stateProvider.state(collabCCNAState);
+	$stateProvider.state(collabCCNPState);
+	$stateProvider.state(collabCCIEState);
 
 	$stateProvider.state('careers', {
 		abstract: false,
@@ -323,17 +371,7 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 		controller: 'calendarCtrl'
 	})
 
-	$stateProvider.state('security',{
-		abstract: false,
-		url: '/security',
-		templateUrl: './views/ciscoSecurity/ccie.html'
-	})
 
-		$stateProvider.state('collaboration',{
-		abstract: false,
-		url: '/collaboration',
-		templateUrl: './views/collab/ccna.html'
-	})
 
 
 
