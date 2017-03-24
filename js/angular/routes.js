@@ -92,12 +92,12 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 		templateUrl: './views/courses/ui-ux.html'
 	}
 
-	// var ciscoCourseState = {
-	// 	name: 'cisco',
-	// 	url: '/courses/cisco/:mod',
-	// 	controller: 'tabCtrl',
-	// 	templateUrl: './views/courses/cisco.html'
-	// }
+	var ciscoOldState = {
+		name: 'cisco-old',
+		url: '/courses/cisco/:mod',
+		controller: 'tabCtrl',
+		templateUrl: './views/courses/cisco.html'
+	}
 
 	var ciscoCourseState = {
 		name: 'cisco',
@@ -248,13 +248,13 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 		templateUrl: './views/ciscoSecurity/ccna.html'
 	}
 
-		var securityCCNPState = {
+	var securityCCNPState = {
 		name: 'securityccnp',
 		url: '/security/ccnp',
 		templateUrl: './views/ciscoSecurity/ccnp.html'
 	}
 
-		var securityCCIEState = {
+	var securityCCIEState = {
 		name: 'securityccie',
 		url: '/security/ccie',
 		templateUrl: './views/ciscoSecurity/ccie.html'
@@ -278,6 +278,24 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 		templateUrl: './views/collab/ccie.html'
 	}
 
+	var RSCCNAState = {
+		name: 'rs-ccna',
+		url: '/rs/ccna',
+		templateUrl: './views/routingSwitching/ccna.html'
+	}
+
+	var RSCCNPState = {
+		name: 'rs-ccnp',
+		url: '/rs/ccnp',
+		templateUrl: './views/routingSwitching/ccnp.html'
+	}
+
+	var RSCCIEState = {
+		name: 'rs-ccie',
+		url: '/rs/ccie',
+		templateUrl: './views/routingSwitching/ccie.html'
+	}
+
 
 	$stateProvider.state(homeState);
 	$stateProvider.state(page404State);
@@ -294,6 +312,7 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 	$stateProvider.state(dbaCourseState);
 	$stateProvider.state(uiuxCourseState);
 	$stateProvider.state(ciscoCourseState);
+	$stateProvider.state(ciscoOldState);
 	$stateProvider.state(webDeveloperState);
 	$stateProvider.state(AdvancedWebDeveloperState);
 	$stateProvider.state(calendarState);
@@ -321,6 +340,10 @@ angular.module('virtue').config(['$urlRouterProvider','$stateProvider','$httpPro
 	$stateProvider.state(collabCCNAState);
 	$stateProvider.state(collabCCNPState);
 	$stateProvider.state(collabCCIEState);
+	$stateProvider.state(RSCCNAState);
+	$stateProvider.state(RSCCNPState);
+	$stateProvider.state(RSCCIEState);
+
 
 	$stateProvider.state('careers', {
 		abstract: false,
